@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 07 14:25:14 2018
+# Process ID: 6936
+# Current directory: D:/WORKSPACE/FPGA/Final_Project_RTES
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11844 D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.xpr
+# Log file: D:/WORKSPACE/FPGA/Final_Project_RTES/vivado.log
+# Journal file: D:/WORKSPACE/FPGA/Final_Project_RTES\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/WORKSPACE/FPGA/Final_Project_RTES/Final_Project_RTES.xpr
+archive_project D:/WORKSPACE/FPGA/Final_Project_RTES.xpr.zip -temp_dir D:/WORKSPACE/FPGA/Final_Project_RTES/.Xil/Vivado-6936-SISLAB-551 -force -include_config_settings
+archive_project D:/WORKSPACE/FPGA/Final_Project_RTES.xpr.zip -temp_dir D:/WORKSPACE/FPGA/Final_Project_RTES/.Xil/Vivado-6936-SISLAB-55 -force -include_config_settings

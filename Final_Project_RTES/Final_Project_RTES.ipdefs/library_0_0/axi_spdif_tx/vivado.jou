@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Aug 20 10:16:01 2018
+# Process ID: 3312
+# Current directory: F:/Project/FPGA/HDMI_AC701/vivado/hdl-hdl_2017_r1/library/axi_spdif_tx
+# Command line: vivado.exe -mode batch -source axi_spdif_tx_ip.tcl
+# Log file: F:/Project/FPGA/HDMI_AC701/vivado/hdl-hdl_2017_r1/library/axi_spdif_tx/vivado.log
+# Journal file: F:/Project/FPGA/HDMI_AC701/vivado/hdl-hdl_2017_r1/library/axi_spdif_tx\vivado.jou
+#-----------------------------------------------------------
+source axi_spdif_tx_ip.tcl

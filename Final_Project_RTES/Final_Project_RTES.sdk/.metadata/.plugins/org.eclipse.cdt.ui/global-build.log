@@ -1,0 +1,1636 @@
+10:41:22 **** Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+xaxivdma.c: In function 'XAxiVdma_FsyncSrcSelect':
+xaxivdma.c:644:1: internal compiler error: Segmentation fault
+ }
+ ^
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
+make[1]: *** [libs] Error 1
+make: *** [mb0/libsrc/axivdma_v6_2/src/make.libs] Error 2
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+make: Target `all' not remade because of errors.
+10:41:43 **** Build of project freertos_mb_1 ****
+make -k all 
+"Running Make include in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"include"
+"Running Make include in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Compiling FreeRTOS"
+mb-ar: creating ../../../lib/libfreertos.a
+"Running Make libs in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+10:42:17 **** Clean-only build of project standalone_mb_0 ****
+10:42:17 **** Clean-only build of project freertos_mb_1 ****
+make -k clean 
+make -k clean 
+rm -f mb1/lib/libxil.a
+rm -f mb0/lib/libxil.a
+10:42:18 **** Build of project freertos_mb_1 ****
+make -k all 
+"Running Make include in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"include"
+"Running Make include in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Compiling FreeRTOS"
+"Running Make libs in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+10:42:29 **** Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+xaxivdma.c: In function 'XAxiVdma_FsyncSrcSelect':
+xaxivdma.c:644:1: internal compiler error: Segmentation fault
+ }
+ ^
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
+make[1]: *** [libs] Error 1
+make: *** [mb0/libsrc/axivdma_v6_2/src/make.libs] Error 2
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+make: Target `all' not remade because of errors.
+13:09:10 **** Build of project freertos_mb_1 ****
+make -k all 
+"Running Make include in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"include"
+"Running Make include in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Compiling FreeRTOS"
+"Running Make libs in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+13:09:20 **** Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+13:09:41 **** Clean-only build of project freertos_mb_1 ****
+make -k clean 
+rm -f mb1/lib/libxil.a
+13:09:41 **** Clean-only build of project standalone_mb_0 ****
+make -k clean 
+rm -f mb0/lib/libxil.a
+13:09:42 **** Build of project freertos_mb_1 ****
+make -k all 
+"Running Make include in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"include"
+"Running Make include in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Compiling FreeRTOS"
+mb-ar: creating ../../../lib/libfreertos.a
+"Running Make libs in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+13:09:52 **** Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+14:11:25 **** Clean-only build of configuration Debug for project MB1_RTOS ****
+make clean 
+rm -rf  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o  ./src/elt3017_draw.d ./src/main_dino.d ./src/main_intr.d  MB1_RTOS.elf.size  MB1_RTOS.elf
+' '
+14:11:25 **** Build of configuration Debug for project MB1_RTOS ****
+make all 
+'Building file: ../src/elt3017_draw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/elt3017_draw.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/elt3017_draw.d" -MT"src/elt3017_draw.o" -o "src/elt3017_draw.o" "../src/elt3017_draw.c"
+In file included from ../src/elt3017_draw.h:11:0,
+                 from ../src/elt3017_draw.c:10:
+../src/mb1.h:5:10: note: #pragma message: Running Interrupt Example
+  #pragma message "Running Interrupt Example"
+          ^
+'Finished building: ../src/elt3017_draw.c'
+' '
+'Building file: ../src/main_dino.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_dino.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_dino.d" -MT"src/main_dino.o" -o "src/main_dino.o" "../src/main_dino.c"
+In file included from ../src/main_dino.c:1:0:
+../src/mb1.h:5:10: note: #pragma message: Running Interrupt Example
+  #pragma message "Running Interrupt Example"
+          ^
+'Finished building: ../src/main_dino.c'
+' '
+'Building file: ../src/main_intr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_intr.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_intr.d" -MT"src/main_intr.o" -o "src/main_intr.o" "../src/main_intr.c"
+In file included from ../src/main_intr.c:1:0:
+../src/mb1.h:5:10: note: #pragma message: Running Interrupt Example
+  #pragma message "Running Interrupt Example"
+          ^
+'Finished building: ../src/main_intr.c'
+' '
+'Building target: MB1_RTOS.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos_mb_1/mb1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "MB1_RTOS.elf"  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: MB1_RTOS.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB1_RTOS.elf  |tee "MB1_RTOS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95268	   1768	  69660	 166696	  28b28	MB1_RTOS.elf
+'Finished building: MB1_RTOS.elf.size'
+' '
+14:11:27 **** Clean-only build of configuration Debug for project driver_HDMI ****
+make clean 
+rm -rf  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o  ./src/main_mb0.d  ./inc/cf_hdmi.d ./inc/transmitter.d  driver_HDMI.elf.size  driver_HDMI.elf
+' '
+14:11:27 **** Build of configuration Debug for project driver_HDMI ****
+make all 
+'Building file: ../src/main_mb0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"src/main_mb0.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_mb0.d" -MT"src/main_mb0.o" -o "src/main_mb0.o" "../src/main_mb0.c"
+In file included from ../src/main_mb0.c:46:0:
+../../standalone_mb_0/mb0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_mb_0/mb0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+'Finished building: ../src/main_mb0.c'
+' '
+'Building file: ../inc/cf_hdmi.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/cf_hdmi.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/cf_hdmi.d" -MT"inc/cf_hdmi.o" -o "inc/cf_hdmi.o" "../inc/cf_hdmi.c"
+'Finished building: ../inc/cf_hdmi.c'
+' '
+'Building file: ../inc/transmitter.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/transmitter.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/transmitter.d" -MT"inc/transmitter.o" -o "inc/transmitter.o" "../inc/transmitter.c"
+'Finished building: ../inc/transmitter.c'
+' '
+'Building target: driver_HDMI.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_mb_0/mb0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "driver_HDMI.elf"  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o   -lHDMI_MicroBlazeLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: driver_HDMI.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size driver_HDMI.elf  |tee "driver_HDMI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87526	1229400	   4024	1320950	 1427f6	driver_HDMI.elf
+'Finished building: driver_HDMI.elf.size'
+' '
+14:11:32 **** Incremental Build of configuration Debug for project MB1_RTOS ****
+make all 
+make: Nothing to be done for `all'.
+14:11:32 **** Incremental Build of configuration Debug for project driver_HDMI ****
+make all 
+make: Nothing to be done for `all'.
+14:16:59 **** Incremental Build of configuration Debug for project MB1_RTOS ****
+make all 
+make: Nothing to be done for `all'.
+14:17:00 **** Incremental Build of configuration Debug for project driver_HDMI ****
+make all 
+make: Nothing to be done for `all'.
+14:18:33 **** Auto Build of configuration Debug for project MB1_RTOS ****
+make all 
+'Building file: ../src/elt3017_draw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/elt3017_draw.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/elt3017_draw.d" -MT"src/elt3017_draw.o" -o "src/elt3017_draw.o" "../src/elt3017_draw.c"
+In file included from ../src/elt3017_draw.h:11:0,
+                 from ../src/elt3017_draw.c:10:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/elt3017_draw.c'
+' '
+'Building file: ../src/main_dino.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_dino.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_dino.d" -MT"src/main_dino.o" -o "src/main_dino.o" "../src/main_dino.c"
+In file included from ../src/main_dino.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_dino.c'
+' '
+'Building file: ../src/main_intr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_intr.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_intr.d" -MT"src/main_intr.o" -o "src/main_intr.o" "../src/main_intr.c"
+In file included from ../src/main_intr.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_intr.c'
+' '
+'Building target: MB1_RTOS.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos_mb_1/mb1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "MB1_RTOS.elf"  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: MB1_RTOS.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB1_RTOS.elf  |tee "MB1_RTOS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94940	   1768	  69668	 166376	  289e8	MB1_RTOS.elf
+'Finished building: MB1_RTOS.elf.size'
+' '
+14:18:57 **** Incremental Build of configuration Debug for project MB1_RTOS ****
+make all 
+make: Nothing to be done for `all'.
+14:19:22 **** Clean-only build of configuration Debug for project MB1_RTOS ****
+make clean 
+rm -rf  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o  ./src/elt3017_draw.d ./src/main_dino.d ./src/main_intr.d  MB1_RTOS.elf.size  MB1_RTOS.elf
+' '
+14:19:22 **** Clean-only build of configuration Debug for project driver_HDMI ****
+make clean 
+rm -rf  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o  ./src/main_mb0.d  ./inc/cf_hdmi.d ./inc/transmitter.d  driver_HDMI.elf.size  driver_HDMI.elf
+' '
+14:19:23 **** Clean-only build of project standalone_mb_0 ****
+14:19:23 **** Clean-only build of project freertos_mb_1 ****
+make -k clean 
+make -k clean 
+rm -f mb1/lib/libxil.a
+rm -f mb0/lib/libxil.a
+14:19:23 **** Build of project freertos_mb_1 ****
+make -k all 
+"Running Make include in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"include"
+"Running Make include in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Compiling FreeRTOS"
+"Running Make libs in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+14:19:33 **** Build of configuration Debug for project MB1_RTOS ****
+make all 
+'Building file: ../src/elt3017_draw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/elt3017_draw.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/elt3017_draw.d" -MT"src/elt3017_draw.o" -o "src/elt3017_draw.o" "../src/elt3017_draw.c"
+In file included from ../src/elt3017_draw.h:11:0,
+                 from ../src/elt3017_draw.c:10:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/elt3017_draw.c'
+' '
+'Building file: ../src/main_dino.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_dino.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_dino.d" -MT"src/main_dino.o" -o "src/main_dino.o" "../src/main_dino.c"
+In file included from ../src/main_dino.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_dino.c'
+' '
+'Building file: ../src/main_intr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_intr.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_intr.d" -MT"src/main_intr.o" -o "src/main_intr.o" "../src/main_intr.c"
+In file included from ../src/main_intr.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_intr.c'
+' '
+'Building target: MB1_RTOS.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos_mb_1/mb1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "MB1_RTOS.elf"  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: MB1_RTOS.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB1_RTOS.elf  |tee "MB1_RTOS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94940	   1768	  69668	 166376	  289e8	MB1_RTOS.elf
+'Finished building: MB1_RTOS.elf.size'
+' '
+14:19:34 **** Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+xaxivdma.c: In function 'XAxiVdma_FsyncSrcSelect':
+xaxivdma.c:644:1: internal compiler error: Segmentation fault
+ }
+ ^
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
+make[1]: *** [libs] Error 1
+make: *** [mb0/libsrc/axivdma_v6_2/src/make.libs] Error 2
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+make: Target `all' not remade because of errors.
+14:20:06 **** Incremental Build of configuration Debug for project MB1_RTOS ****
+make all 
+make: Nothing to be done for `all'.
+14:20:06 **** Incremental Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+xaxivdma.c: In function 'XAxiVdma_FsyncSrcSelect':
+xaxivdma.c:644:1: internal compiler error: Segmentation fault
+ }
+ ^
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
+make[1]: *** [libs] Error 1
+make: *** [mb0/libsrc/axivdma_v6_2/src/make.libs] Error 2
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+make: Target `all' not remade because of errors.
+14:20:19 **** Build of configuration Debug for project driver_HDMI ****
+make all 
+'Building file: ../src/main_mb0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"src/main_mb0.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_mb0.d" -MT"src/main_mb0.o" -o "src/main_mb0.o" "../src/main_mb0.c"
+In file included from ../src/main_mb0.c:46:0:
+../../standalone_mb_0/mb0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_mb_0/mb0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+'Finished building: ../src/main_mb0.c'
+' '
+'Building file: ../inc/cf_hdmi.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/cf_hdmi.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/cf_hdmi.d" -MT"inc/cf_hdmi.o" -o "inc/cf_hdmi.o" "../inc/cf_hdmi.c"
+'Finished building: ../inc/cf_hdmi.c'
+' '
+'Building file: ../inc/transmitter.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/transmitter.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/transmitter.d" -MT"inc/transmitter.o" -o "inc/transmitter.o" "../inc/transmitter.c"
+'Finished building: ../inc/transmitter.c'
+' '
+'Building target: driver_HDMI.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_mb_0/mb0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "driver_HDMI.elf"  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o   -lHDMI_MicroBlazeLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: driver_HDMI.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size driver_HDMI.elf  |tee "driver_HDMI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87526	1229400	   4024	1320950	 1427f6	driver_HDMI.elf
+'Finished building: driver_HDMI.elf.size'
+' '
+14:21:03 **** Incremental Build of configuration Debug for project MB1_RTOS ****
+make all 
+make: Nothing to be done for `all'.
+14:21:03 **** Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+xaxivdma.c: In function 'XAxiVdma_FsyncSrcSelect':
+xaxivdma.c:644:1: internal compiler error: Segmentation fault
+ }
+ ^
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
+make[1]: *** [libs] Error 1
+make: *** [mb0/libsrc/axivdma_v6_2/src/make.libs] Error 2
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+make: Target `all' not remade because of errors.
+14:21:17 **** Incremental Build of configuration Debug for project driver_HDMI ****
+make all 
+'Building file: ../src/main_mb0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"src/main_mb0.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_mb0.d" -MT"src/main_mb0.o" -o "src/main_mb0.o" "../src/main_mb0.c"
+In file included from ../src/main_mb0.c:46:0:
+../../standalone_mb_0/mb0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_mb_0/mb0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+'Finished building: ../src/main_mb0.c'
+' '
+'Building file: ../inc/cf_hdmi.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/cf_hdmi.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/cf_hdmi.d" -MT"inc/cf_hdmi.o" -o "inc/cf_hdmi.o" "../inc/cf_hdmi.c"
+'Finished building: ../inc/cf_hdmi.c'
+' '
+'Building file: ../inc/transmitter.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/transmitter.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/transmitter.d" -MT"inc/transmitter.o" -o "inc/transmitter.o" "../inc/transmitter.c"
+'Finished building: ../inc/transmitter.c'
+' '
+'Building target: driver_HDMI.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_mb_0/mb0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "driver_HDMI.elf"  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o   -lHDMI_MicroBlazeLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: driver_HDMI.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size driver_HDMI.elf  |tee "driver_HDMI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87526	1229400	   4024	1320950	 1427f6	driver_HDMI.elf
+'Finished building: driver_HDMI.elf.size'
+' '
+14:22:51 **** Clean-only build of configuration Debug for project MB1_RTOS ****
+make clean 
+rm -rf  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o  ./src/elt3017_draw.d ./src/main_dino.d ./src/main_intr.d  MB1_RTOS.elf.size  MB1_RTOS.elf
+' '
+14:22:51 **** Incremental Build of configuration Debug for project MB1_RTOS ****
+make all 
+'Building file: ../src/elt3017_draw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/elt3017_draw.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/elt3017_draw.d" -MT"src/elt3017_draw.o" -o "src/elt3017_draw.o" "../src/elt3017_draw.c"
+In file included from ../src/elt3017_draw.h:11:0,
+                 from ../src/elt3017_draw.c:10:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/elt3017_draw.c'
+' '
+'Building file: ../src/main_dino.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_dino.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_dino.d" -MT"src/main_dino.o" -o "src/main_dino.o" "../src/main_dino.c"
+In file included from ../src/main_dino.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_dino.c'
+' '
+'Building file: ../src/main_intr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_intr.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_intr.d" -MT"src/main_intr.o" -o "src/main_intr.o" "../src/main_intr.c"
+In file included from ../src/main_intr.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_intr.c'
+' '
+'Building target: MB1_RTOS.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos_mb_1/mb1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "MB1_RTOS.elf"  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: MB1_RTOS.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB1_RTOS.elf  |tee "MB1_RTOS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94940	   1768	  68644	 165352	  285e8	MB1_RTOS.elf
+'Finished building: MB1_RTOS.elf.size'
+' '
+14:22:52 **** Clean-only build of configuration Debug for project driver_HDMI ****
+make clean 
+rm -rf  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o  ./src/main_mb0.d  ./inc/cf_hdmi.d ./inc/transmitter.d  driver_HDMI.elf.size  driver_HDMI.elf
+' '
+14:22:53 **** Incremental Build of configuration Debug for project driver_HDMI ****
+make all 
+'Building file: ../src/main_mb0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"src/main_mb0.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_mb0.d" -MT"src/main_mb0.o" -o "src/main_mb0.o" "../src/main_mb0.c"
+In file included from ../src/main_mb0.c:46:0:
+../../standalone_mb_0/mb0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_mb_0/mb0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+'Finished building: ../src/main_mb0.c'
+' '
+'Building file: ../inc/cf_hdmi.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/cf_hdmi.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/cf_hdmi.d" -MT"inc/cf_hdmi.o" -o "inc/cf_hdmi.o" "../inc/cf_hdmi.c"
+'Finished building: ../inc/cf_hdmi.c'
+' '
+'Building file: ../inc/transmitter.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/transmitter.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/transmitter.d" -MT"inc/transmitter.o" -o "inc/transmitter.o" "../inc/transmitter.c"
+'Finished building: ../inc/transmitter.c'
+' '
+'Building target: driver_HDMI.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_mb_0/mb0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "driver_HDMI.elf"  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o   -lHDMI_MicroBlazeLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: driver_HDMI.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size driver_HDMI.elf  |tee "driver_HDMI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87526	1229400	   3000	1319926	 1423f6	driver_HDMI.elf
+'Finished building: driver_HDMI.elf.size'
+' '
+14:23:33 **** Clean-only build of configuration Debug for project MB1_RTOS ****
+make clean 
+rm -rf  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o  ./src/elt3017_draw.d ./src/main_dino.d ./src/main_intr.d  MB1_RTOS.elf.size  MB1_RTOS.elf
+' '
+14:23:33 **** Clean-only build of configuration Debug for project driver_HDMI ****
+make clean 
+rm -rf  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o  ./src/main_mb0.d  ./inc/cf_hdmi.d ./inc/transmitter.d  driver_HDMI.elf.size  driver_HDMI.elf
+' '
+14:23:34 **** Clean-only build of project standalone_mb_0 ****
+14:23:34 **** Clean-only build of project freertos_mb_1 ****
+make -k clean 
+make -k clean 
+rm -f mb1/lib/libxil.a
+rm -f mb0/lib/libxil.a
+14:23:59 **** Build of project freertos_mb_1 ****
+make -k all 
+"Running Make include in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"include"
+"Running Make include in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Compiling FreeRTOS"
+mb-ar: creating ../../../lib/libfreertos.a
+"Running Make libs in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+14:24:09 **** Build of configuration Debug for project MB1_RTOS ****
+make all 
+'Building file: ../src/elt3017_draw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/elt3017_draw.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/elt3017_draw.d" -MT"src/elt3017_draw.o" -o "src/elt3017_draw.o" "../src/elt3017_draw.c"
+In file included from ../src/elt3017_draw.h:11:0,
+                 from ../src/elt3017_draw.c:10:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/elt3017_draw.c'
+' '
+'Building file: ../src/main_dino.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_dino.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_dino.d" -MT"src/main_dino.o" -o "src/main_dino.o" "../src/main_dino.c"
+In file included from ../src/main_dino.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_dino.c'
+' '
+'Building file: ../src/main_intr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_intr.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_intr.d" -MT"src/main_intr.o" -o "src/main_intr.o" "../src/main_intr.c"
+In file included from ../src/main_intr.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_intr.c'
+' '
+'Building target: MB1_RTOS.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos_mb_1/mb1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "MB1_RTOS.elf"  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: MB1_RTOS.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB1_RTOS.elf  |tee "MB1_RTOS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94940	   1768	  68644	 165352	  285e8	MB1_RTOS.elf
+'Finished building: MB1_RTOS.elf.size'
+' '
+14:24:11 **** Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+14:24:24 **** Build of configuration Debug for project driver_HDMI ****
+make all 
+'Building file: ../src/main_mb0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"src/main_mb0.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_mb0.d" -MT"src/main_mb0.o" -o "src/main_mb0.o" "../src/main_mb0.c"
+In file included from ../src/main_mb0.c:46:0:
+../../standalone_mb_0/mb0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_mb_0/mb0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+'Finished building: ../src/main_mb0.c'
+' '
+'Building file: ../inc/cf_hdmi.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/cf_hdmi.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/cf_hdmi.d" -MT"inc/cf_hdmi.o" -o "inc/cf_hdmi.o" "../inc/cf_hdmi.c"
+'Finished building: ../inc/cf_hdmi.c'
+' '
+'Building file: ../inc/transmitter.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/transmitter.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/transmitter.d" -MT"inc/transmitter.o" -o "inc/transmitter.o" "../inc/transmitter.c"
+'Finished building: ../inc/transmitter.c'
+' '
+'Building target: driver_HDMI.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_mb_0/mb0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "driver_HDMI.elf"  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o   -lHDMI_MicroBlazeLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: driver_HDMI.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size driver_HDMI.elf  |tee "driver_HDMI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87526	1229400	   3000	1319926	 1423f6	driver_HDMI.elf
+'Finished building: driver_HDMI.elf.size'
+' '
+14:24:52 **** Clean-only build of configuration Debug for project MB1_RTOS ****
+make clean 
+rm -rf  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o  ./src/elt3017_draw.d ./src/main_dino.d ./src/main_intr.d  MB1_RTOS.elf.size  MB1_RTOS.elf
+' '
+14:24:52 **** Clean-only build of configuration Debug for project driver_HDMI ****
+make clean 
+rm -rf  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o  ./src/main_mb0.d  ./inc/cf_hdmi.d ./inc/transmitter.d  driver_HDMI.elf.size  driver_HDMI.elf
+' '
+14:24:52 **** Clean-only build of project freertos_mb_1 ****
+14:24:52 **** Clean-only build of project standalone_mb_0 ****
+make -k clean 
+make -k clean 
+rm -f mb1/lib/libxil.a
+rm -f mb0/lib/libxil.a
+14:24:56 **** Build of project freertos_mb_1 ****
+make -k all 
+"Running Make include in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"include"
+"Running Make include in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb1/libsrc/bram_v4_1/src"
+make -C mb1/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb1/libsrc/cpu_v2_5/src"
+make -C mb1/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb1/libsrc/freertos823_xilinx_v1_3/src"
+make -C mb1/libsrc/freertos823_xilinx_v1_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Compiling FreeRTOS"
+"Running Make libs in mb1/libsrc/gpio_v4_3/src"
+make -C mb1/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb1/libsrc/intc_v3_5/src"
+make -C mb1/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb1/libsrc/mbox_v4_1/src"
+make -C mb1/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb1/libsrc/mutex_v4_2/src"
+make -C mb1/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb1/libsrc/tmrctr_v4_2/src"
+make -C mb1/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb1/libsrc/uartlite_v3_2/src"
+make -C mb1/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+14:25:06 **** Build of configuration Debug for project MB1_RTOS ****
+make all 
+'Building file: ../src/elt3017_draw.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/elt3017_draw.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/elt3017_draw.d" -MT"src/elt3017_draw.o" -o "src/elt3017_draw.o" "../src/elt3017_draw.c"
+In file included from ../src/elt3017_draw.h:11:0,
+                 from ../src/elt3017_draw.c:10:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/elt3017_draw.c'
+' '
+'Building file: ../src/main_dino.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_dino.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_dino.d" -MT"src/main_dino.o" -o "src/main_dino.o" "../src/main_dino.c"
+In file included from ../src/main_dino.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_dino.c'
+' '
+'Building file: ../src/main_intr.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_intr.o" -I../../freertos_mb_1/mb1/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_intr.d" -MT"src/main_intr.o" -o "src/main_intr.o" "../src/main_intr.c"
+In file included from ../src/main_intr.c:1:0:
+../src/mb1.h:7:10: note: #pragma message: Running A Dinosaur Game
+  #pragma message "Running A Dinosaur Game"
+          ^
+'Finished building: ../src/main_intr.c'
+' '
+'Building target: MB1_RTOS.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../freertos_mb_1/mb1/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "MB1_RTOS.elf"  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: MB1_RTOS.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MB1_RTOS.elf  |tee "MB1_RTOS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94940	   1768	  68644	 165352	  285e8	MB1_RTOS.elf
+'Finished building: MB1_RTOS.elf.size'
+' '
+14:25:08 **** Build of project standalone_mb_0 ****
+make -k all 
+"Running Make include in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in mb0/libsrc/axidma_v9_3/src"
+make -C mb0/libsrc/axidma_v9_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axidma"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in mb0/libsrc/axiethernet_v5_3/src"
+make -C mb0/libsrc/axiethernet_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axiethernet"
+"Running Make libs in mb0/libsrc/axivdma_v6_2/src"
+make -C mb0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling axivdma"
+"Running Make libs in mb0/libsrc/bram_v4_1/src"
+make -C mb0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in mb0/libsrc/cpu_v2_5/src"
+make -C mb0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in mb0/libsrc/gpio_v4_3/src"
+make -C mb0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in mb0/libsrc/iic_v3_4/src"
+make -C mb0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iic"
+"Running Make libs in mb0/libsrc/intc_v3_5/src"
+make -C mb0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in mb0/libsrc/mbox_v4_1/src"
+make -C mb0/libsrc/mbox_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mbox"
+"Running Make libs in mb0/libsrc/mutex_v4_2/src"
+make -C mb0/libsrc/mutex_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling mutex"
+"Running Make libs in mb0/libsrc/spi_v4_2/src"
+make -C mb0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling spi"
+"Running Make libs in mb0/libsrc/standalone_v6_1/src"
+make -C mb0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in mb0/libsrc/tmrctr_v4_2/src"
+make -C mb0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling tmrctr"
+"Running Make libs in mb0/libsrc/uartlite_v3_2/src"
+make -C mb0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+14:25:22 **** Build of configuration Debug for project driver_HDMI ****
+make all 
+'Building file: ../src/main_mb0.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"src/main_mb0.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"src/main_mb0.d" -MT"src/main_mb0.o" -o "src/main_mb0.o" "../src/main_mb0.c"
+In file included from ../src/main_mb0.c:46:0:
+../../standalone_mb_0/mb0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../standalone_mb_0/mb0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+'Finished building: ../src/main_mb0.c'
+' '
+'Building file: ../inc/cf_hdmi.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/cf_hdmi.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/cf_hdmi.d" -MT"inc/cf_hdmi.o" -o "inc/cf_hdmi.o" "../inc/cf_hdmi.c"
+'Finished building: ../inc/cf_hdmi.c'
+' '
+'Building file: ../inc/transmitter.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\inc" -c -fmessage-length=0 -MT"inc/transmitter.o" -I../../standalone_mb_0/mb0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -MMD -MP -MF"inc/transmitter.d" -MT"inc/transmitter.o" -o "inc/transmitter.o" "../inc/transmitter.c"
+'Finished building: ../inc/transmitter.c'
+' '
+'Building target: driver_HDMI.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L"D:\WORKSPACE\FPGA\Final_Project_RTES\Final_Project_RTES.sdk\driver_HDMI\lib" -Wl,-T -Wl,../src/lscript.ld -L../../standalone_mb_0/mb0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -o "driver_HDMI.elf"  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o   -lHDMI_MicroBlazeLib -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: driver_HDMI.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size driver_HDMI.elf  |tee "driver_HDMI.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87526	1229400	   3000	1319926	 1423f6	driver_HDMI.elf
+'Finished building: driver_HDMI.elf.size'
+' '
+14:25:38 **** Incremental Build of configuration Debug for project MB1_RTOS ****
+make all 
+make: Nothing to be done for `all'.
+14:25:39 **** Incremental Build of configuration Debug for project driver_HDMI ****
+make all 
+make: Nothing to be done for `all'.
+14:26:45 **** Clean-only build of configuration Debug for project MB1_RTOS ****
+make clean 
+rm -rf  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o  ./src/elt3017_draw.d ./src/main_dino.d ./src/main_intr.d  MB1_RTOS.elf.size  MB1_RTOS.elf
+' '
+14:26:46 **** Clean-only build of configuration Debug for project driver_HDMI ****
+make clean 
+rm -rf  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o  ./src/main_mb0.d  ./inc/cf_hdmi.d ./inc/transmitter.d  driver_HDMI.elf.size  driver_HDMI.elf
+' '
+14:26:46 **** Clean-only build of project freertos_mb_1 ****
+14:26:46 **** Clean-only build of project standalone_mb_0 ****
+make -k clean 
+make -k clean 
+rm -f mb1/lib/libxil.a
+rm -f mb0/lib/libxil.a

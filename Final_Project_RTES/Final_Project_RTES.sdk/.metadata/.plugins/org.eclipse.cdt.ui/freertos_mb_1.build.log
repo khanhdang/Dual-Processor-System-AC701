@@ -1,0 +1,6 @@
+14:26:46 **** Clean-only build of project freertos_mb_1 ****
+make -k clean 
+rm -f mb1/lib/libxil.a
+
+14:26:46 Build Finished (took 188ms)
+

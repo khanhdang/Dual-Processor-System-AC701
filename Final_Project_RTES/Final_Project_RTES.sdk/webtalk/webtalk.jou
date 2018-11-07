@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# 
+# Start of session at: Wed Nov 07 14:26:53 2018
+# Process ID: 5124
+# Current directory: D:/WORKSPACE/FPGA/Final_Project_RTES/Final_Project_RTES.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/WORKSPACE/FPGA/Final_Project_RTES/Final_Project_RTES.sdk/webtalk/webtalk.log
+# Journal file: D:/WORKSPACE/FPGA/Final_Project_RTES/Final_Project_RTES.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

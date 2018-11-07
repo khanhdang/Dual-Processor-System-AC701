@@ -1,0 +1,1226 @@
+
+################################################################
+# This is a generated script based on design: system
+#
+# Though there are limitations about the generated script,
+# the main purpose of this utility is to make learning
+# IP Integrator Tcl commands easier.
+################################################################
+
+namespace eval _tcl {
+proc get_script_folder {} {
+   set script_path [file normalize [info script]]
+   set script_folder [file dirname $script_path]
+   return $script_folder
+}
+}
+variable script_folder
+set script_folder [_tcl::get_script_folder]
+
+################################################################
+# Check if script is running in correct Vivado version.
+################################################################
+set scripts_vivado_version 2016.4
+set current_vivado_version [version -short]
+
+if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+   puts ""
+   catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+
+   return 1
+}
+
+################################################################
+# START
+################################################################
+
+# To test this script, run the following commands from Vivado Tcl console:
+# source system_script.tcl
+
+# If there is no project opened, this script will create a
+# project, but make sure you do not have an existing project
+# <./myproj/project_1.xpr> in the current working folder.
+
+set list_projs [get_projects -quiet]
+if { $list_projs eq "" } {
+   create_project project_1 myproj -part xc7a200tfbg676-2
+   set_property BOARD_PART xilinx.com:ac701:part0:1.0 [current_project]
+}
+
+
+# CHANGE DESIGN NAME HERE
+set design_name system
+
+# If you do not already have an existing IP Integrator design open,
+# you can create a design using the following command:
+#    create_bd_design $design_name
+
+# Creating design if needed
+set errMsg ""
+set nRet 0
+
+set cur_design [current_bd_design -quiet]
+set list_cells [get_bd_cells -quiet]
+
+if { ${design_name} eq "" } {
+   # USE CASES:
+   #    1) Design_name not set
+
+   set errMsg "Please set the variable <design_name> to a non-empty value."
+   set nRet 1
+
+} elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
+   # USE CASES:
+   #    2): Current design opened AND is empty AND names same.
+   #    3): Current design opened AND is empty AND names diff; design_name NOT in project.
+   #    4): Current design opened AND is empty AND names diff; design_name exists in project.
+
+   if { $cur_design ne $design_name } {
+      common::send_msg_id "BD_TCL-001" "INFO" "Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
+      set design_name [get_property NAME $cur_design]
+   }
+   common::send_msg_id "BD_TCL-002" "INFO" "Constructing design in IPI design <$cur_design>..."
+
+} elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
+   # USE CASES:
+   #    5) Current design opened AND has components AND same names.
+
+   set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+   set nRet 1
+} elseif { [get_files -quiet ${design_name}.bd] ne "" } {
+   # USE CASES: 
+   #    6) Current opened design, has components, but diff names, design_name exists in project.
+   #    7) No opened design, design_name exists in project.
+
+   set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+   set nRet 2
+
+} else {
+   # USE CASES:
+   #    8) No opened design, design_name not in project.
+   #    9) Current opened design, has components, but diff names, design_name not in project.
+
+   common::send_msg_id "BD_TCL-003" "INFO" "Currently there is no design <$design_name> in project, so creating one..."
+
+   create_bd_design $design_name
+
+   common::send_msg_id "BD_TCL-004" "INFO" "Making design <$design_name> as current_bd_design."
+   current_bd_design $design_name
+
+}
+
+common::send_msg_id "BD_TCL-005" "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
+
+if { $nRet != 0 } {
+   catch {common::send_msg_id "BD_TCL-114" "ERROR" $errMsg}
+   return $nRet
+}
+
+
+##################################################################
+# MIG PRJ FILE TCL PROCs
+##################################################################
+
+proc write_mig_file_system_axi_ddr_cntrl_0 { str_mig_prj_filepath } {
+
+   set mig_prj_file [open $str_mig_prj_filepath  w+]
+
+   puts $mig_prj_file {<?xml version='1.0' encoding='UTF-8'?>}
+   puts $mig_prj_file {<!-- IMPORTANT: This is an internal file that has been generated by the MIG software. Any direct editing or changes made to this file may result in unpredictable behavior or data corruption. It is strongly advised that users do not edit the contents of this file. Re-run the MIG GUI with the required settings if any of the options provided below need to be altered. -->}
+   puts $mig_prj_file {<Project NoOfControllers="1" >}
+   puts $mig_prj_file {    <ModuleName>system_axi_ddr_cntrl_0</ModuleName>}
+   puts $mig_prj_file {    <dci_inouts_inputs>1</dci_inouts_inputs>}
+   puts $mig_prj_file {    <dci_inputs>1</dci_inputs>}
+   puts $mig_prj_file {    <Debug_En>OFF</Debug_En>}
+   puts $mig_prj_file {    <DataDepth_En>1024</DataDepth_En>}
+   puts $mig_prj_file {    <LowPower_En>OFF</LowPower_En>}
+   puts $mig_prj_file {    <XADC_En>Disabled</XADC_En>}
+   puts $mig_prj_file {    <TargetFPGA>xc7a200t-fbg676/-2</TargetFPGA>}
+   puts $mig_prj_file {    <Version>2.0</Version>}
+   puts $mig_prj_file {    <SystemClock>Differential</SystemClock>}
+   puts $mig_prj_file {    <ReferenceClock>Use System Clock</ReferenceClock>}
+   puts $mig_prj_file {    <SysResetPolarity>ACTIVE HIGH</SysResetPolarity>}
+   puts $mig_prj_file {    <BankSelectionFlag>FALSE</BankSelectionFlag>}
+   puts $mig_prj_file {    <InternalVref>0</InternalVref>}
+   puts $mig_prj_file {    <dci_hr_inouts_inputs>40 Ohms</dci_hr_inouts_inputs>}
+   puts $mig_prj_file {    <dci_cascade>0</dci_cascade>}
+   puts $mig_prj_file {    <Controller number="0" >}
+   puts $mig_prj_file {        <MemoryDevice>DDR3_SDRAM/SODIMMs/MT8JTF12864HZ-1G6</MemoryDevice>}
+   puts $mig_prj_file {        <TimePeriod>2500</TimePeriod>}
+   puts $mig_prj_file {        <VccAuxIO>1.8V</VccAuxIO>}
+   puts $mig_prj_file {        <PHYRatio>4:1</PHYRatio>}
+   puts $mig_prj_file {        <InputClkFreq>200</InputClkFreq>}
+   puts $mig_prj_file {        <UIExtraClocks>1</UIExtraClocks>}
+   puts $mig_prj_file {        <MMCMClkOut0> 4.000</MMCMClkOut0>}
+   puts $mig_prj_file {        <MMCMClkOut1>1</MMCMClkOut1>}
+   puts $mig_prj_file {        <MMCMClkOut2>1</MMCMClkOut2>}
+   puts $mig_prj_file {        <MMCMClkOut3>1</MMCMClkOut3>}
+   puts $mig_prj_file {        <MMCMClkOut4>1</MMCMClkOut4>}
+   puts $mig_prj_file {        <DataWidth>64</DataWidth>}
+   puts $mig_prj_file {        <DeepMemory>1</DeepMemory>}
+   puts $mig_prj_file {        <DataMask>1</DataMask>}
+   puts $mig_prj_file {        <ECC>Disabled</ECC>}
+   puts $mig_prj_file {        <Ordering>Normal</Ordering>}
+   puts $mig_prj_file {        <CustomPart>FALSE</CustomPart>}
+   puts $mig_prj_file {        <NewPartName></NewPartName>}
+   puts $mig_prj_file {        <RowAddress>14</RowAddress>}
+   puts $mig_prj_file {        <ColAddress>10</ColAddress>}
+   puts $mig_prj_file {        <BankAddress>3</BankAddress>}
+   puts $mig_prj_file {        <MemoryVoltage>1.5V</MemoryVoltage>}
+   puts $mig_prj_file {        <UserMemoryAddressMap>BANK_ROW_COLUMN</UserMemoryAddressMap>}
+   puts $mig_prj_file {        <PinSelection>}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="M4" SLEW="FAST" name="ddr3_addr[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="N7" SLEW="FAST" name="ddr3_addr[10]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="L5" SLEW="FAST" name="ddr3_addr[11]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="L7" SLEW="FAST" name="ddr3_addr[12]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="N6" SLEW="FAST" name="ddr3_addr[13]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="J3" SLEW="FAST" name="ddr3_addr[1]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="J1" SLEW="FAST" name="ddr3_addr[2]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="L4" SLEW="FAST" name="ddr3_addr[3]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="K5" SLEW="FAST" name="ddr3_addr[4]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="M7" SLEW="FAST" name="ddr3_addr[5]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="K1" SLEW="FAST" name="ddr3_addr[6]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="M6" SLEW="FAST" name="ddr3_addr[7]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="H1" SLEW="FAST" name="ddr3_addr[8]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="K3" SLEW="FAST" name="ddr3_addr[9]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="N1" SLEW="FAST" name="ddr3_ba[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="M1" SLEW="FAST" name="ddr3_ba[1]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="H2" SLEW="FAST" name="ddr3_ba[2]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="T4" SLEW="FAST" name="ddr3_cas_n" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="L2" SLEW="FAST" name="ddr3_ck_n[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="M2" SLEW="FAST" name="ddr3_ck_p[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="P4" SLEW="FAST" name="ddr3_cke[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="T3" SLEW="FAST" name="ddr3_cs_n[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AC6" SLEW="FAST" name="ddr3_dm[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AC4" SLEW="FAST" name="ddr3_dm[1]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AA3" SLEW="FAST" name="ddr3_dm[2]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="U7" SLEW="FAST" name="ddr3_dm[3]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="G1" SLEW="FAST" name="ddr3_dm[4]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="F3" SLEW="FAST" name="ddr3_dm[5]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="G5" SLEW="FAST" name="ddr3_dm[6]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="H9" SLEW="FAST" name="ddr3_dm[7]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AB6" SLEW="FAST" name="ddr3_dq[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AF3" SLEW="FAST" name="ddr3_dq[10]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AE3" SLEW="FAST" name="ddr3_dq[11]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AD3" SLEW="FAST" name="ddr3_dq[12]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AC3" SLEW="FAST" name="ddr3_dq[13]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AB4" SLEW="FAST" name="ddr3_dq[14]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AA4" SLEW="FAST" name="ddr3_dq[15]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AC2" SLEW="FAST" name="ddr3_dq[16]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AB2" SLEW="FAST" name="ddr3_dq[17]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AF2" SLEW="FAST" name="ddr3_dq[18]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AE2" SLEW="FAST" name="ddr3_dq[19]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AA8" SLEW="FAST" name="ddr3_dq[1]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="Y1" SLEW="FAST" name="ddr3_dq[20]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="Y2" SLEW="FAST" name="ddr3_dq[21]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AC1" SLEW="FAST" name="ddr3_dq[22]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AB1" SLEW="FAST" name="ddr3_dq[23]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="Y3" SLEW="FAST" name="ddr3_dq[24]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="W3" SLEW="FAST" name="ddr3_dq[25]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="W6" SLEW="FAST" name="ddr3_dq[26]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="V6" SLEW="FAST" name="ddr3_dq[27]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="W4" SLEW="FAST" name="ddr3_dq[28]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="W5" SLEW="FAST" name="ddr3_dq[29]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="Y8" SLEW="FAST" name="ddr3_dq[2]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="W1" SLEW="FAST" name="ddr3_dq[30]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="V1" SLEW="FAST" name="ddr3_dq[31]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="G2" SLEW="FAST" name="ddr3_dq[32]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="D1" SLEW="FAST" name="ddr3_dq[33]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="E1" SLEW="FAST" name="ddr3_dq[34]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="E2" SLEW="FAST" name="ddr3_dq[35]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="F2" SLEW="FAST" name="ddr3_dq[36]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="A2" SLEW="FAST" name="ddr3_dq[37]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="A3" SLEW="FAST" name="ddr3_dq[38]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="C2" SLEW="FAST" name="ddr3_dq[39]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AB5" SLEW="FAST" name="ddr3_dq[3]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="C3" SLEW="FAST" name="ddr3_dq[40]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="D3" SLEW="FAST" name="ddr3_dq[41]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="A4" SLEW="FAST" name="ddr3_dq[42]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="B4" SLEW="FAST" name="ddr3_dq[43]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="C4" SLEW="FAST" name="ddr3_dq[44]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="D4" SLEW="FAST" name="ddr3_dq[45]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="D5" SLEW="FAST" name="ddr3_dq[46]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="E5" SLEW="FAST" name="ddr3_dq[47]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="F4" SLEW="FAST" name="ddr3_dq[48]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="G4" SLEW="FAST" name="ddr3_dq[49]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AA5" SLEW="FAST" name="ddr3_dq[4]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="K6" SLEW="FAST" name="ddr3_dq[50]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="K7" SLEW="FAST" name="ddr3_dq[51]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="K8" SLEW="FAST" name="ddr3_dq[52]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="L8" SLEW="FAST" name="ddr3_dq[53]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="J5" SLEW="FAST" name="ddr3_dq[54]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="J6" SLEW="FAST" name="ddr3_dq[55]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="G6" SLEW="FAST" name="ddr3_dq[56]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="H6" SLEW="FAST" name="ddr3_dq[57]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="F7" SLEW="FAST" name="ddr3_dq[58]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="F8" SLEW="FAST" name="ddr3_dq[59]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="Y5" SLEW="FAST" name="ddr3_dq[5]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="G8" SLEW="FAST" name="ddr3_dq[60]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="H8" SLEW="FAST" name="ddr3_dq[61]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="D6" SLEW="FAST" name="ddr3_dq[62]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="E6" SLEW="FAST" name="ddr3_dq[63]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="Y6" SLEW="FAST" name="ddr3_dq[6]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="Y7" SLEW="FAST" name="ddr3_dq[7]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AF4" SLEW="FAST" name="ddr3_dq[8]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="AF5" SLEW="FAST" name="ddr3_dq[9]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="W8" SLEW="FAST" name="ddr3_dqs_n[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="AE5" SLEW="FAST" name="ddr3_dqs_n[1]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="AE1" SLEW="FAST" name="ddr3_dqs_n[2]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="V2" SLEW="FAST" name="ddr3_dqs_n[3]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="B1" SLEW="FAST" name="ddr3_dqs_n[4]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="A5" SLEW="FAST" name="ddr3_dqs_n[5]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="H4" SLEW="FAST" name="ddr3_dqs_n[6]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="G7" SLEW="FAST" name="ddr3_dqs_n[7]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="V8" SLEW="FAST" name="ddr3_dqs_p[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="AD5" SLEW="FAST" name="ddr3_dqs_p[1]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="AD1" SLEW="FAST" name="ddr3_dqs_p[2]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="V3" SLEW="FAST" name="ddr3_dqs_p[3]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="C1" SLEW="FAST" name="ddr3_dqs_p[4]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="B5" SLEW="FAST" name="ddr3_dqs_p[5]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="J4" SLEW="FAST" name="ddr3_dqs_p[6]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="DIFF_SSTL15" PADName="H7" SLEW="FAST" name="ddr3_dqs_p[7]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="R2" SLEW="FAST" name="ddr3_odt[0]" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="P1" SLEW="FAST" name="ddr3_ras_n" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="LVCMOS15" PADName="N8" SLEW="FAST" name="ddr3_reset_n" IN_TERM="" />}
+   puts $mig_prj_file {            <Pin VCCAUX_IO="" IOSTANDARD="SSTL15" PADName="R1" SLEW="FAST" name="ddr3_we_n" IN_TERM="" />}
+   puts $mig_prj_file {        </PinSelection>}
+   puts $mig_prj_file {        <System_Clock>}
+   puts $mig_prj_file {            <Pin PADName="R3/P3(CC_P/N)" Bank="34" name="sys_clk_p/n" />}
+   puts $mig_prj_file {        </System_Clock>}
+   puts $mig_prj_file {        <System_Control>}
+   puts $mig_prj_file {            <Pin PADName="No connect" Bank="Select Bank" name="sys_rst" />}
+   puts $mig_prj_file {            <Pin PADName="No connect" Bank="Select Bank" name="init_calib_complete" />}
+   puts $mig_prj_file {            <Pin PADName="No connect" Bank="Select Bank" name="tg_compare_error" />}
+   puts $mig_prj_file {        </System_Control>}
+   puts $mig_prj_file {        <TimingParameters>}
+   puts $mig_prj_file {            <Parameters twtr="7.5" trrd="6" trefi="7.8" tfaw="30" trtp="7.5" tcke="5" trfc="110" trp="13.125" tras="35" trcd="13.125" />}
+   puts $mig_prj_file {        </TimingParameters>}
+   puts $mig_prj_file {        <mrBurstLength name="Burst Length" >8 - Fixed</mrBurstLength>}
+   puts $mig_prj_file {        <mrBurstType name="Read Burst Type and Length" >Sequential</mrBurstType>}
+   puts $mig_prj_file {        <mrCasLatency name="CAS Latency" >6</mrCasLatency>}
+   puts $mig_prj_file {        <mrMode name="Mode" >Normal</mrMode>}
+   puts $mig_prj_file {        <mrDllReset name="DLL Reset" >No</mrDllReset>}
+   puts $mig_prj_file {        <mrPdMode name="DLL control for precharge PD" >Slow Exit</mrPdMode>}
+   puts $mig_prj_file {        <emrDllEnable name="DLL Enable" >Enable</emrDllEnable>}
+   puts $mig_prj_file {        <emrOutputDriveStrength name="Output Driver Impedance Control" >RZQ/7</emrOutputDriveStrength>}
+   puts $mig_prj_file {        <emrMirrorSelection name="Address Mirroring" >Disable</emrMirrorSelection>}
+   puts $mig_prj_file {        <emrCSSelection name="Controller Chip Select Pin" >Enable</emrCSSelection>}
+   puts $mig_prj_file {        <emrRTT name="RTT (nominal) - On Die Termination (ODT)" >RZQ/6</emrRTT>}
+   puts $mig_prj_file {        <emrPosted name="Additive Latency (AL)" >0</emrPosted>}
+   puts $mig_prj_file {        <emrOCD name="Write Leveling Enable" >Disabled</emrOCD>}
+   puts $mig_prj_file {        <emrDQS name="TDQS enable" >Enabled</emrDQS>}
+   puts $mig_prj_file {        <emrRDQS name="Qoff" >Output Buffer Enabled</emrRDQS>}
+   puts $mig_prj_file {        <mr2PartialArraySelfRefresh name="Partial-Array Self Refresh" >Full Array</mr2PartialArraySelfRefresh>}
+   puts $mig_prj_file {        <mr2CasWriteLatency name="CAS write latency" >5</mr2CasWriteLatency>}
+   puts $mig_prj_file {        <mr2AutoSelfRefresh name="Auto Self Refresh" >Enabled</mr2AutoSelfRefresh>}
+   puts $mig_prj_file {        <mr2SelfRefreshTempRange name="High Temparature Self Refresh Rate" >Normal</mr2SelfRefreshTempRange>}
+   puts $mig_prj_file {        <mr2RTTWR name="RTT_WR - Dynamic On Die Termination (ODT)" >Dynamic ODT off</mr2RTTWR>}
+   puts $mig_prj_file {        <PortInterface>AXI</PortInterface>}
+   puts $mig_prj_file {        <AXIParameters>}
+   puts $mig_prj_file {            <C0_C_RD_WR_ARB_ALGORITHM>RD_PRI_REG</C0_C_RD_WR_ARB_ALGORITHM>}
+   puts $mig_prj_file {            <C0_S_AXI_ADDR_WIDTH>32</C0_S_AXI_ADDR_WIDTH>}
+   puts $mig_prj_file {            <C0_S_AXI_DATA_WIDTH>512</C0_S_AXI_DATA_WIDTH>}
+   puts $mig_prj_file {            <C0_S_AXI_ID_WIDTH>4</C0_S_AXI_ID_WIDTH>}
+   puts $mig_prj_file {            <C0_S_AXI_SUPPORTS_NARROW_BURST>0</C0_S_AXI_SUPPORTS_NARROW_BURST>}
+   puts $mig_prj_file {        </AXIParameters>}
+   puts $mig_prj_file {    </Controller>}
+   puts $mig_prj_file {</Project>}
+
+   close $mig_prj_file
+}
+# End of write_mig_file_system_axi_ddr_cntrl_0()
+
+
+
+##################################################################
+# DESIGN PROCs
+##################################################################
+
+
+# Hierarchical cell: sys_mb1_local_memory
+proc create_hier_cell_sys_mb1_local_memory { parentCell nameHier } {
+
+  variable script_folder
+
+  if { $parentCell eq "" || $nameHier eq "" } {
+     catch {common::send_msg_id "BD_TCL-102" "ERROR" create_hier_cell_sys_mb1_local_memory() - Empty argument(s)!"}
+     return
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+  # Create cell and set as current instance
+  set hier_obj [create_bd_cell -type hier $nameHier]
+  current_bd_instance $hier_obj
+
+  # Create interface pins
+  create_bd_intf_pin -mode MirroredMaster -vlnv xilinx.com:interface:lmb_rtl:1.0 DLMB
+  create_bd_intf_pin -mode MirroredMaster -vlnv xilinx.com:interface:lmb_rtl:1.0 ILMB
+
+  # Create pins
+  create_bd_pin -dir I -type clk LMB_Clk
+  create_bd_pin -dir I -type rst SYS_Rst
+
+  # Create instance: dlmb_bram_if_cntlr, and set properties
+  set dlmb_bram_if_cntlr [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 dlmb_bram_if_cntlr ]
+  set_property -dict [ list \
+CONFIG.C_ECC {0} \
+ ] $dlmb_bram_if_cntlr
+
+  # Create instance: dlmb_v10, and set properties
+  set dlmb_v10 [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_v10:3.0 dlmb_v10 ]
+
+  # Create instance: ilmb_bram_if_cntlr, and set properties
+  set ilmb_bram_if_cntlr [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 ilmb_bram_if_cntlr ]
+  set_property -dict [ list \
+CONFIG.C_ECC {0} \
+ ] $ilmb_bram_if_cntlr
+
+  # Create instance: ilmb_v10, and set properties
+  set ilmb_v10 [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_v10:3.0 ilmb_v10 ]
+
+  # Create instance: lmb_bram, and set properties
+  set lmb_bram [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 lmb_bram ]
+  set_property -dict [ list \
+CONFIG.Memory_Type {True_Dual_Port_RAM} \
+CONFIG.use_bram_block {BRAM_Controller} \
+ ] $lmb_bram
+
+  # Create interface connections
+  connect_bd_intf_net -intf_net sys_mb1_dlmb [get_bd_intf_pins DLMB] [get_bd_intf_pins dlmb_v10/LMB_M]
+  connect_bd_intf_net -intf_net sys_mb1_dlmb_bus [get_bd_intf_pins dlmb_bram_if_cntlr/SLMB] [get_bd_intf_pins dlmb_v10/LMB_Sl_0]
+  connect_bd_intf_net -intf_net sys_mb1_dlmb_cntlr [get_bd_intf_pins dlmb_bram_if_cntlr/BRAM_PORT] [get_bd_intf_pins lmb_bram/BRAM_PORTA]
+  connect_bd_intf_net -intf_net sys_mb1_ilmb [get_bd_intf_pins ILMB] [get_bd_intf_pins ilmb_v10/LMB_M]
+  connect_bd_intf_net -intf_net sys_mb1_ilmb_bus [get_bd_intf_pins ilmb_bram_if_cntlr/SLMB] [get_bd_intf_pins ilmb_v10/LMB_Sl_0]
+  connect_bd_intf_net -intf_net sys_mb1_ilmb_cntlr [get_bd_intf_pins ilmb_bram_if_cntlr/BRAM_PORT] [get_bd_intf_pins lmb_bram/BRAM_PORTB]
+
+  # Create port connections
+  connect_bd_net -net SYS_Rst_1 [get_bd_pins SYS_Rst] [get_bd_pins dlmb_bram_if_cntlr/LMB_Rst] [get_bd_pins dlmb_v10/SYS_Rst] [get_bd_pins ilmb_bram_if_cntlr/LMB_Rst] [get_bd_pins ilmb_v10/SYS_Rst]
+  connect_bd_net -net sys_mb1_Clk [get_bd_pins LMB_Clk] [get_bd_pins dlmb_bram_if_cntlr/LMB_Clk] [get_bd_pins dlmb_v10/LMB_Clk] [get_bd_pins ilmb_bram_if_cntlr/LMB_Clk] [get_bd_pins ilmb_v10/LMB_Clk]
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+}
+
+
+# Procedure to create entire design; Provide argument to make
+# procedure reusable. If parentCell is "", will use root.
+proc create_root_design { parentCell } {
+
+  variable script_folder
+
+  if { $parentCell eq "" } {
+     set parentCell [get_bd_cells /]
+  }
+
+  # Get object for parentCell
+  set parentObj [get_bd_cells $parentCell]
+  if { $parentObj == "" } {
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+     return
+  }
+
+  # Make sure parentObj is hier blk
+  set parentType [get_property TYPE $parentObj]
+  if { $parentType ne "hier" } {
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     return
+  }
+
+  # Save current instance; Restore later
+  set oldCurInst [current_bd_instance .]
+
+  # Set parent object as current
+  current_bd_instance $parentObj
+
+
+  # Create interface ports
+  set ddr3 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 ddr3 ]
+  set gpio_lcd [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_lcd ]
+  set iic_main [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 iic_main ]
+  set mdio [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mdio_io:1.0 mdio ]
+  set rgmii [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:rgmii_rtl:1.0 rgmii ]
+
+  # Create ports
+  set gpio0_i [ create_bd_port -dir I -from 31 -to 0 gpio0_i ]
+  set gpio0_o [ create_bd_port -dir O -from 31 -to 0 gpio0_o ]
+  set gpio0_t [ create_bd_port -dir O -from 31 -to 0 gpio0_t ]
+  set gpio1_i [ create_bd_port -dir I -from 31 -to 0 gpio1_i ]
+  set gpio1_o [ create_bd_port -dir O -from 31 -to 0 gpio1_o ]
+  set gpio1_t [ create_bd_port -dir O -from 31 -to 0 gpio1_t ]
+  set hdmi_16_data [ create_bd_port -dir O -from 15 -to 0 hdmi_16_data ]
+  set hdmi_16_data_e [ create_bd_port -dir O hdmi_16_data_e ]
+  set hdmi_16_hsync [ create_bd_port -dir O hdmi_16_hsync ]
+  set hdmi_16_vsync [ create_bd_port -dir O hdmi_16_vsync ]
+  set hdmi_24_data [ create_bd_port -dir O -from 23 -to 0 hdmi_24_data ]
+  set hdmi_24_data_e [ create_bd_port -dir O hdmi_24_data_e ]
+  set hdmi_24_hsync [ create_bd_port -dir O hdmi_24_hsync ]
+  set hdmi_24_vsync [ create_bd_port -dir O hdmi_24_vsync ]
+  set hdmi_36_data [ create_bd_port -dir O -from 35 -to 0 hdmi_36_data ]
+  set hdmi_36_data_e [ create_bd_port -dir O hdmi_36_data_e ]
+  set hdmi_36_hsync [ create_bd_port -dir O hdmi_36_hsync ]
+  set hdmi_36_vsync [ create_bd_port -dir O hdmi_36_vsync ]
+  set hdmi_out_clk [ create_bd_port -dir O hdmi_out_clk ]
+  set mb_intr_06 [ create_bd_port -dir I -type intr mb_intr_06 ]
+  set mb_intr_12 [ create_bd_port -dir I -type intr mb_intr_12 ]
+  set mb_intr_13 [ create_bd_port -dir I -type intr mb_intr_13 ]
+  set mb_intr_14 [ create_bd_port -dir I -type intr mb_intr_14 ]
+  set mb_intr_15 [ create_bd_port -dir I -type intr mb_intr_15 ]
+  set phy_rst_n [ create_bd_port -dir O -type rst phy_rst_n ]
+  set spdif [ create_bd_port -dir O spdif ]
+  set spi_clk_i [ create_bd_port -dir I spi_clk_i ]
+  set spi_clk_o [ create_bd_port -dir O spi_clk_o ]
+  set spi_csn_i [ create_bd_port -dir I -from 7 -to 0 spi_csn_i ]
+  set spi_csn_o [ create_bd_port -dir O -from 7 -to 0 spi_csn_o ]
+  set spi_sdi_i [ create_bd_port -dir I spi_sdi_i ]
+  set spi_sdo_i [ create_bd_port -dir I spi_sdo_i ]
+  set spi_sdo_o [ create_bd_port -dir O spi_sdo_o ]
+  set sys_clk_n [ create_bd_port -dir I sys_clk_n ]
+  set sys_clk_p [ create_bd_port -dir I sys_clk_p ]
+  set sys_rst [ create_bd_port -dir I -type rst sys_rst ]
+  set_property -dict [ list \
+CONFIG.POLARITY {ACTIVE_HIGH} \
+ ] $sys_rst
+  set uart_sin [ create_bd_port -dir I uart_sin ]
+  set uart_sout [ create_bd_port -dir O uart_sout ]
+
+  # Create instance: axi_ddr_cntrl, and set properties
+  set axi_ddr_cntrl [ create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.0 axi_ddr_cntrl ]
+
+  # Generate the PRJ File for MIG
+  set str_mig_folder [get_property IP_DIR [ get_ips [ get_property CONFIG.Component_Name $axi_ddr_cntrl ] ] ]
+  set str_mig_file_name ac701_system_mig.prj
+  set str_mig_file_path ${str_mig_folder}/${str_mig_file_name}
+
+  write_mig_file_system_axi_ddr_cntrl_0 $str_mig_file_path
+
+  set_property -dict [ list \
+CONFIG.XML_INPUT_FILE {ac701_system_mig.prj} \
+ ] $axi_ddr_cntrl
+
+  # Create instance: axi_ddr_cntrl_device_temp_i_GND, and set properties
+  set axi_ddr_cntrl_device_temp_i_GND [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 axi_ddr_cntrl_device_temp_i_GND ]
+  set_property -dict [ list \
+CONFIG.CONST_VAL {0} \
+CONFIG.CONST_WIDTH {12} \
+ ] $axi_ddr_cntrl_device_temp_i_GND
+
+  # Create instance: axi_ethernet, and set properties
+  set axi_ethernet [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernet:7.0 axi_ethernet ]
+  set_property -dict [ list \
+CONFIG.PHY_TYPE {RGMII} \
+ ] $axi_ethernet
+
+  # Create instance: axi_ethernet_dma, and set properties
+  set axi_ethernet_dma [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_ethernet_dma ]
+  set_property -dict [ list \
+CONFIG.c_include_mm2s_dre {1} \
+CONFIG.c_include_s2mm_dre {1} \
+CONFIG.c_sg_use_stsapp_length {1} \
+ ] $axi_ethernet_dma
+
+  # Create instance: axi_gpio, and set properties
+  set axi_gpio [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio ]
+  set_property -dict [ list \
+CONFIG.C_GPIO2_WIDTH {32} \
+CONFIG.C_GPIO_WIDTH {32} \
+CONFIG.C_INTERRUPT_PRESENT {1} \
+CONFIG.C_IS_DUAL {1} \
+ ] $axi_gpio
+
+  # Create instance: axi_gpio_lcd, and set properties
+  set axi_gpio_lcd [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_lcd ]
+  set_property -dict [ list \
+CONFIG.C_GPIO_WIDTH {7} \
+CONFIG.C_INTERRUPT_PRESENT {1} \
+ ] $axi_gpio_lcd
+
+  # Create instance: axi_hdmi_clkgen, and set properties
+  set axi_hdmi_clkgen [ create_bd_cell -type ip -vlnv analog.com:user:axi_clkgen:1.0 axi_hdmi_clkgen ]
+
+  # Create instance: axi_hdmi_core, and set properties
+  set axi_hdmi_core [ create_bd_cell -type ip -vlnv analog.com:user:axi_hdmi_tx:1.0 axi_hdmi_core ]
+
+  # Create instance: axi_hdmi_dma, and set properties
+  set axi_hdmi_dma [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.2 axi_hdmi_dma ]
+  set_property -dict [ list \
+CONFIG.c_include_s2mm {0} \
+CONFIG.c_m_axi_mm2s_data_width {512} \
+CONFIG.c_m_axis_mm2s_tdata_width {64} \
+CONFIG.c_use_mm2s_fsync {1} \
+ ] $axi_hdmi_dma
+
+  # Create instance: axi_iic_main, and set properties
+  set axi_iic_main [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_iic:2.0 axi_iic_main ]
+
+  # Create instance: axi_intc, and set properties
+  set axi_intc [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 axi_intc ]
+  set_property -dict [ list \
+CONFIG.C_HAS_FAST {0} \
+ ] $axi_intc
+
+  # Create instance: axi_mb0_interconnect, and set properties
+  set axi_mb0_interconnect [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_mb0_interconnect ]
+  set_property -dict [ list \
+CONFIG.NUM_MI {15} \
+ ] $axi_mb0_interconnect
+
+  # Create instance: axi_mem_interconnect, and set properties
+  set axi_mem_interconnect [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_mem_interconnect ]
+  set_property -dict [ list \
+CONFIG.NUM_MI {1} \
+CONFIG.NUM_SI {10} \
+CONFIG.S00_HAS_DATA_FIFO {2} \
+CONFIG.S01_HAS_DATA_FIFO {2} \
+CONFIG.S02_HAS_DATA_FIFO {2} \
+CONFIG.S03_HAS_DATA_FIFO {2} \
+CONFIG.S04_HAS_DATA_FIFO {2} \
+CONFIG.S05_HAS_DATA_FIFO {2} \
+CONFIG.S06_HAS_DATA_FIFO {2} \
+CONFIG.S07_HAS_DATA_FIFO {2} \
+CONFIG.S08_HAS_DATA_FIFO {2} \
+CONFIG.S09_HAS_DATA_FIFO {2} \
+CONFIG.STRATEGY {2} \
+ ] $axi_mem_interconnect
+
+  # Need to retain value_src of defaults
+  set_property -dict [ list \
+CONFIG.S00_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S01_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S02_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S03_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S04_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S05_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S06_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S07_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S08_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+CONFIG.S09_HAS_DATA_FIFO.VALUE_SRC {DEFAULT} \
+ ] $axi_mem_interconnect
+
+  # Create instance: axi_spdif_tx_core, and set properties
+  set axi_spdif_tx_core [ create_bd_cell -type ip -vlnv analog.com:user:axi_spdif_tx:1.0 axi_spdif_tx_core ]
+  set_property -dict [ list \
+CONFIG.DMA_TYPE {0} \
+CONFIG.S_AXI_ADDRESS_WIDTH {16} \
+ ] $axi_spdif_tx_core
+
+  # Create instance: axi_spdif_tx_dma, and set properties
+  set axi_spdif_tx_dma [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_spdif_tx_dma ]
+  set_property -dict [ list \
+CONFIG.c_include_s2mm {0} \
+CONFIG.c_sg_include_stscntrl_strm {0} \
+ ] $axi_spdif_tx_dma
+
+  # Create instance: axi_spi, and set properties
+  set axi_spi [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_spi ]
+  set_property -dict [ list \
+CONFIG.C_NUM_SS_BITS {8} \
+CONFIG.C_SCK_RATIO {8} \
+CONFIG.C_USE_STARTUP {0} \
+ ] $axi_spi
+
+  # Create instance: axi_timer, and set properties
+  set axi_timer [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer ]
+
+  # Create instance: axi_timer_mb1_0, and set properties
+  set axi_timer_mb1_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_mb1_0 ]
+
+  # Create instance: axi_uart, and set properties
+  set axi_uart [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uart ]
+  set_property -dict [ list \
+CONFIG.C_BAUDRATE {115200} \
+ ] $axi_uart
+
+  # Create instance: mailbox_0, and set properties
+  set mailbox_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mailbox:2.1 mailbox_0 ]
+  set_property -dict [ list \
+CONFIG.C_ASYNC_CLKS {0} \
+CONFIG.C_IMPL_STYLE {0} \
+CONFIG.C_MAILBOX_DEPTH {16} \
+ ] $mailbox_0
+
+  # Create instance: mb0, and set properties
+  set mb0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:10.0 mb0 ]
+  set_property -dict [ list \
+CONFIG.C_CACHE_BYTE_SIZE {65536} \
+CONFIG.C_DCACHE_BYTE_SIZE {65536} \
+CONFIG.G_TEMPLATE_LIST {4} \
+ ] $mb0
+
+  # Create instance: mb1, and set properties
+  set mb1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:10.0 mb1 ]
+  set_property -dict [ list \
+CONFIG.C_CACHE_BYTE_SIZE {8192} \
+CONFIG.C_DCACHE_BYTE_SIZE {8192} \
+CONFIG.C_DEBUG_ENABLED {2} \
+CONFIG.C_D_AXI {1} \
+CONFIG.C_D_LMB {1} \
+CONFIG.C_FSL_LINKS {0} \
+CONFIG.C_I_LMB {1} \
+CONFIG.C_USE_DCACHE {1} \
+CONFIG.C_USE_ICACHE {1} \
+CONFIG.G_TEMPLATE_LIST {4} \
+ ] $mb1
+
+  # Create instance: mutex_0, and set properties
+  set mutex_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mutex:2.1 mutex_0 ]
+
+  # Create instance: sys_audio_clkgen, and set properties
+  set sys_audio_clkgen [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 sys_audio_clkgen ]
+  set_property -dict [ list \
+CONFIG.CLKIN1_JITTER_PS {50.0} \
+CONFIG.CLKOUT1_JITTER {327.996} \
+CONFIG.CLKOUT1_PHASE_ERROR {264.435} \
+CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {12.288} \
+CONFIG.MMCM_CLKFBOUT_MULT_F {44.375} \
+CONFIG.MMCM_CLKIN1_PERIOD {5.0} \
+CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F {80.250} \
+CONFIG.MMCM_COMPENSATION {ZHOLD} \
+CONFIG.MMCM_DIVCLK_DIVIDE {9} \
+CONFIG.PRIM_SOURCE {No_buffer} \
+CONFIG.USE_LOCKED {false} \
+CONFIG.USE_PHASE_ALIGNMENT {false} \
+CONFIG.USE_RESET {false} \
+ ] $sys_audio_clkgen
+
+  # Need to retain value_src of defaults
+  set_property -dict [ list \
+CONFIG.CLKIN1_JITTER_PS.VALUE_SRC {DEFAULT} \
+CONFIG.CLKOUT1_JITTER.VALUE_SRC {DEFAULT} \
+CONFIG.CLKOUT1_PHASE_ERROR.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKFBOUT_MULT_F.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKIN1_PERIOD.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKIN2_PERIOD.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_COMPENSATION.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_DIVCLK_DIVIDE.VALUE_SRC {DEFAULT} \
+ ] $sys_audio_clkgen
+
+  # Create instance: sys_concat_intc, and set properties
+  set sys_concat_intc [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 sys_concat_intc ]
+  set_property -dict [ list \
+CONFIG.NUM_PORTS {16} \
+ ] $sys_concat_intc
+
+  # Create instance: sys_debug, and set properties
+  set sys_debug [ create_bd_cell -type ip -vlnv xilinx.com:ip:mdm:3.2 sys_debug ]
+  set_property -dict [ list \
+CONFIG.C_DBG_MEM_ACCESS {0} \
+CONFIG.C_DBG_REG_ACCESS {1} \
+CONFIG.C_JTAG_CHAIN {2} \
+CONFIG.C_MB_DBG_PORTS {2} \
+CONFIG.C_S_AXI_ADDR_WIDTH {5} \
+CONFIG.C_TRACE_OUTPUT {0} \
+CONFIG.C_USE_CROSS_TRIGGER {0} \
+CONFIG.C_USE_UART {1} \
+ ] $sys_debug
+
+  # Create instance: sys_dlmb, and set properties
+  set sys_dlmb [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_v10:3.0 sys_dlmb ]
+
+  # Create instance: sys_dlmb_cntlr, and set properties
+  set sys_dlmb_cntlr [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 sys_dlmb_cntlr ]
+  set_property -dict [ list \
+CONFIG.C_ECC {0} \
+ ] $sys_dlmb_cntlr
+
+  # Create instance: sys_ethernet_clkgen, and set properties
+  set sys_ethernet_clkgen [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 sys_ethernet_clkgen ]
+  set_property -dict [ list \
+CONFIG.CLKIN1_JITTER_PS {50.0} \
+CONFIG.CLKOUT1_JITTER {107.523} \
+CONFIG.CLKOUT1_PHASE_ERROR {89.971} \
+CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {125.000} \
+CONFIG.MMCM_CLKFBOUT_MULT_F {5.000} \
+CONFIG.MMCM_CLKIN1_PERIOD {5.0} \
+CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} \
+CONFIG.MMCM_COMPENSATION {ZHOLD} \
+CONFIG.PRIM_IN_FREQ {200.000} \
+ ] $sys_ethernet_clkgen
+
+  # Need to retain value_src of defaults
+  set_property -dict [ list \
+CONFIG.CLKIN1_JITTER_PS.VALUE_SRC {DEFAULT} \
+CONFIG.CLKOUT1_JITTER.VALUE_SRC {DEFAULT} \
+CONFIG.CLKOUT1_PHASE_ERROR.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKFBOUT_MULT_F.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKIN1_PERIOD.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKIN2_PERIOD.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_CLKOUT0_DIVIDE_F.VALUE_SRC {DEFAULT} \
+CONFIG.MMCM_COMPENSATION.VALUE_SRC {DEFAULT} \
+ ] $sys_ethernet_clkgen
+
+  # Create instance: sys_ilmb, and set properties
+  set sys_ilmb [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_v10:3.0 sys_ilmb ]
+
+  # Create instance: sys_ilmb_cntlr, and set properties
+  set sys_ilmb_cntlr [ create_bd_cell -type ip -vlnv xilinx.com:ip:lmb_bram_if_cntlr:4.0 sys_ilmb_cntlr ]
+  set_property -dict [ list \
+CONFIG.C_ECC {0} \
+ ] $sys_ilmb_cntlr
+
+  # Create instance: sys_lmb_bram, and set properties
+  set sys_lmb_bram [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 sys_lmb_bram ]
+  set_property -dict [ list \
+CONFIG.Memory_Type {True_Dual_Port_RAM} \
+CONFIG.use_bram_block {BRAM_Controller} \
+ ] $sys_lmb_bram
+
+  # Create instance: sys_mb1_axi_intc, and set properties
+  set sys_mb1_axi_intc [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 sys_mb1_axi_intc ]
+  set_property -dict [ list \
+CONFIG.C_HAS_FAST {1} \
+ ] $sys_mb1_axi_intc
+
+  # Create instance: sys_mb1_interconnect, and set properties
+  set sys_mb1_interconnect [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 sys_mb1_interconnect ]
+  set_property -dict [ list \
+CONFIG.NUM_MI {6} \
+ ] $sys_mb1_interconnect
+
+  # Create instance: sys_mb1_local_memory
+  create_hier_cell_sys_mb1_local_memory [current_bd_instance .] sys_mb1_local_memory
+
+  # Create instance: sys_rstgen, and set properties
+  set sys_rstgen [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 sys_rstgen ]
+
+  # Create instance: xlconcat_mb1_intr, and set properties
+  set xlconcat_mb1_intr [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_mb1_intr ]
+  set_property -dict [ list \
+CONFIG.NUM_PORTS {4} \
+ ] $xlconcat_mb1_intr
+
+  # Create interface connections
+  connect_bd_intf_net -intf_net Conn [get_bd_intf_pins sys_dlmb/LMB_Sl_0] [get_bd_intf_pins sys_dlmb_cntlr/SLMB]
+  connect_bd_intf_net -intf_net Conn1 [get_bd_intf_pins sys_ilmb/LMB_Sl_0] [get_bd_intf_pins sys_ilmb_cntlr/SLMB]
+  connect_bd_intf_net -intf_net S00_AXI_1 [get_bd_intf_pins axi_mb0_interconnect/S00_AXI] [get_bd_intf_pins mb0/M_AXI_DP]
+  connect_bd_intf_net -intf_net S00_AXI_2 [get_bd_intf_pins axi_mem_interconnect/S00_AXI] [get_bd_intf_pins mb0/M_AXI_DC]
+  connect_bd_intf_net -intf_net S01_AXI_1 [get_bd_intf_pins axi_mem_interconnect/S01_AXI] [get_bd_intf_pins mb0/M_AXI_IC]
+  connect_bd_intf_net -intf_net S02_AXI_1 [get_bd_intf_pins axi_ethernet_dma/M_AXI_SG] [get_bd_intf_pins axi_mem_interconnect/S02_AXI]
+  connect_bd_intf_net -intf_net S03_AXI_1 [get_bd_intf_pins axi_ethernet_dma/M_AXI_MM2S] [get_bd_intf_pins axi_mem_interconnect/S03_AXI]
+  connect_bd_intf_net -intf_net S04_AXI_1 [get_bd_intf_pins axi_ethernet_dma/M_AXI_S2MM] [get_bd_intf_pins axi_mem_interconnect/S04_AXI]
+  connect_bd_intf_net -intf_net S05_AXI_1 [get_bd_intf_pins axi_hdmi_dma/M_AXI_MM2S] [get_bd_intf_pins axi_mem_interconnect/S05_AXI]
+  connect_bd_intf_net -intf_net S06_AXI_1 [get_bd_intf_pins axi_mem_interconnect/S06_AXI] [get_bd_intf_pins axi_spdif_tx_dma/M_AXI_SG]
+  connect_bd_intf_net -intf_net S07_AXI_1 [get_bd_intf_pins axi_mem_interconnect/S07_AXI] [get_bd_intf_pins axi_spdif_tx_dma/M_AXI_MM2S]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M01_AXI [get_bd_intf_pins axi_ethernet/s_axi] [get_bd_intf_pins axi_mb0_interconnect/M01_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M02_AXI [get_bd_intf_pins axi_gpio_lcd/S_AXI] [get_bd_intf_pins axi_mb0_interconnect/M02_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M03_AXI [get_bd_intf_pins axi_ethernet_dma/S_AXI_LITE] [get_bd_intf_pins axi_mb0_interconnect/M03_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M04_AXI [get_bd_intf_pins axi_intc/s_axi] [get_bd_intf_pins axi_mb0_interconnect/M04_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M05_AXI [get_bd_intf_pins axi_mb0_interconnect/M05_AXI] [get_bd_intf_pins axi_timer/S_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M06_AXI [get_bd_intf_pins axi_mb0_interconnect/M06_AXI] [get_bd_intf_pins axi_uart/S_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M07_AXI [get_bd_intf_pins axi_iic_main/S_AXI] [get_bd_intf_pins axi_mb0_interconnect/M07_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M08_AXI [get_bd_intf_pins axi_mb0_interconnect/M08_AXI] [get_bd_intf_pins axi_spdif_tx_dma/S_AXI_LITE]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M09_AXI [get_bd_intf_pins axi_mb0_interconnect/M09_AXI] [get_bd_intf_pins axi_spi/AXI_LITE]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M10_AXI [get_bd_intf_pins axi_hdmi_clkgen/s_axi] [get_bd_intf_pins axi_mb0_interconnect/M10_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M11_AXI [get_bd_intf_pins axi_hdmi_core/s_axi] [get_bd_intf_pins axi_mb0_interconnect/M11_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M12_AXI [get_bd_intf_pins axi_hdmi_dma/S_AXI_LITE] [get_bd_intf_pins axi_mb0_interconnect/M12_AXI]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M13_AXI [get_bd_intf_pins axi_mb0_interconnect/M13_AXI] [get_bd_intf_pins axi_spdif_tx_core/s_axi]
+  connect_bd_intf_net -intf_net axi_cpu_interconnect_M14_AXI [get_bd_intf_pins axi_mb0_interconnect/M14_AXI] [get_bd_intf_pins mailbox_0/S0_AXI]
+  connect_bd_intf_net -intf_net axi_ddr_cntrl_DDR3 [get_bd_intf_ports ddr3] [get_bd_intf_pins axi_ddr_cntrl/DDR3]
+  connect_bd_intf_net -intf_net axi_ethernet_dma_M_AXIS_CNTRL [get_bd_intf_pins axi_ethernet/s_axis_txc] [get_bd_intf_pins axi_ethernet_dma/M_AXIS_CNTRL]
+  connect_bd_intf_net -intf_net axi_ethernet_dma_M_AXIS_MM2S [get_bd_intf_pins axi_ethernet/s_axis_txd] [get_bd_intf_pins axi_ethernet_dma/M_AXIS_MM2S]
+  connect_bd_intf_net -intf_net axi_ethernet_m_axis_rxd [get_bd_intf_pins axi_ethernet/m_axis_rxd] [get_bd_intf_pins axi_ethernet_dma/S_AXIS_S2MM]
+  connect_bd_intf_net -intf_net axi_ethernet_m_axis_rxs [get_bd_intf_pins axi_ethernet/m_axis_rxs] [get_bd_intf_pins axi_ethernet_dma/S_AXIS_STS]
+  connect_bd_intf_net -intf_net axi_ethernet_mdio [get_bd_intf_ports mdio] [get_bd_intf_pins axi_ethernet/mdio]
+  connect_bd_intf_net -intf_net axi_ethernet_rgmii [get_bd_intf_ports rgmii] [get_bd_intf_pins axi_ethernet/rgmii]
+  connect_bd_intf_net -intf_net axi_gpio_lcd_GPIO [get_bd_intf_ports gpio_lcd] [get_bd_intf_pins axi_gpio_lcd/GPIO]
+  connect_bd_intf_net -intf_net axi_iic_main_IIC [get_bd_intf_ports iic_main] [get_bd_intf_pins axi_iic_main/IIC]
+  connect_bd_intf_net -intf_net axi_intc_interrupt [get_bd_intf_pins axi_intc/interrupt] [get_bd_intf_pins mb0/INTERRUPT]
+  connect_bd_intf_net -intf_net axi_mb0_interconnect_M00_AXI [get_bd_intf_pins axi_mb0_interconnect/M00_AXI] [get_bd_intf_pins mutex_0/S0_AXI]
+  connect_bd_intf_net -intf_net axi_mem_interconnect_M00_AXI [get_bd_intf_pins axi_ddr_cntrl/S_AXI] [get_bd_intf_pins axi_mem_interconnect/M00_AXI]
+  connect_bd_intf_net -intf_net sys_debug_MBDEBUG_0 [get_bd_intf_pins mb1/DEBUG] [get_bd_intf_pins sys_debug/MBDEBUG_0]
+  connect_bd_intf_net -intf_net sys_debug_MBDEBUG_1 [get_bd_intf_pins mb0/DEBUG] [get_bd_intf_pins sys_debug/MBDEBUG_1]
+  connect_bd_intf_net -intf_net sys_dlmb_cntlr_BRAM_PORT [get_bd_intf_pins sys_dlmb_cntlr/BRAM_PORT] [get_bd_intf_pins sys_lmb_bram/BRAM_PORTA]
+  connect_bd_intf_net -intf_net sys_ilmb_cntlr_BRAM_PORT [get_bd_intf_pins sys_ilmb_cntlr/BRAM_PORT] [get_bd_intf_pins sys_lmb_bram/BRAM_PORTB]
+  connect_bd_intf_net -intf_net sys_mb1_M_AXI_DC [get_bd_intf_pins axi_mem_interconnect/S08_AXI] [get_bd_intf_pins mb1/M_AXI_DC]
+  connect_bd_intf_net -intf_net sys_mb1_M_AXI_IC [get_bd_intf_pins axi_mem_interconnect/S09_AXI] [get_bd_intf_pins mb1/M_AXI_IC]
+  connect_bd_intf_net -intf_net sys_mb1_axi_dp [get_bd_intf_pins mb1/M_AXI_DP] [get_bd_intf_pins sys_mb1_interconnect/S00_AXI]
+  connect_bd_intf_net -intf_net sys_mb1_axi_periph_M01_AXI [get_bd_intf_pins axi_gpio/S_AXI] [get_bd_intf_pins sys_mb1_interconnect/M01_AXI]
+  connect_bd_intf_net -intf_net sys_mb1_axi_periph_M02_AXI [get_bd_intf_pins axi_timer_mb1_0/S_AXI] [get_bd_intf_pins sys_mb1_interconnect/M02_AXI]
+  connect_bd_intf_net -intf_net sys_mb1_axi_periph_M03_AXI [get_bd_intf_pins mailbox_0/S1_AXI] [get_bd_intf_pins sys_mb1_interconnect/M03_AXI]
+  connect_bd_intf_net -intf_net sys_mb1_axi_periph_M04_AXI [get_bd_intf_pins mutex_0/S1_AXI] [get_bd_intf_pins sys_mb1_interconnect/M04_AXI]
+  connect_bd_intf_net -intf_net sys_mb1_dlmb_1 [get_bd_intf_pins mb1/DLMB] [get_bd_intf_pins sys_mb1_local_memory/DLMB]
+  connect_bd_intf_net -intf_net sys_mb1_ilmb_1 [get_bd_intf_pins mb1/ILMB] [get_bd_intf_pins sys_mb1_local_memory/ILMB]
+  connect_bd_intf_net -intf_net sys_mb1_intc_axi [get_bd_intf_pins sys_mb1_axi_intc/s_axi] [get_bd_intf_pins sys_mb1_interconnect/M00_AXI]
+  connect_bd_intf_net -intf_net sys_mb1_interconnect_M05_AXI [get_bd_intf_pins sys_debug/S_AXI] [get_bd_intf_pins sys_mb1_interconnect/M05_AXI]
+  connect_bd_intf_net -intf_net sys_mb1_interrupt [get_bd_intf_pins mb1/INTERRUPT] [get_bd_intf_pins sys_mb1_axi_intc/interrupt]
+  connect_bd_intf_net -intf_net sys_mb_DLMB [get_bd_intf_pins mb0/DLMB] [get_bd_intf_pins sys_dlmb/LMB_M]
+  connect_bd_intf_net -intf_net sys_mb_ILMB [get_bd_intf_pins mb0/ILMB] [get_bd_intf_pins sys_ilmb/LMB_M]
+
+  # Create port connections
+  connect_bd_net -net axi_ddr_cntrl_device_temp_i_GND_dout [get_bd_pins axi_ddr_cntrl/device_temp_i] [get_bd_pins axi_ddr_cntrl_device_temp_i_GND/dout]
+  connect_bd_net -net axi_ddr_cntrl_mmcm_locked [get_bd_pins axi_ddr_cntrl/mmcm_locked] [get_bd_pins sys_rstgen/dcm_locked]
+  connect_bd_net -net axi_ethernet_dma_mm2s_cntrl_reset_out_n [get_bd_pins axi_ethernet/axi_txc_arstn] [get_bd_pins axi_ethernet_dma/mm2s_cntrl_reset_out_n]
+  connect_bd_net -net axi_ethernet_dma_mm2s_introut [get_bd_pins axi_ethernet_dma/mm2s_introut] [get_bd_pins sys_concat_intc/In2]
+  connect_bd_net -net axi_ethernet_dma_mm2s_prmry_reset_out_n [get_bd_pins axi_ethernet/axi_txd_arstn] [get_bd_pins axi_ethernet_dma/mm2s_prmry_reset_out_n]
+  connect_bd_net -net axi_ethernet_dma_s2mm_introut [get_bd_pins axi_ethernet_dma/s2mm_introut] [get_bd_pins sys_concat_intc/In3]
+  connect_bd_net -net axi_ethernet_dma_s2mm_prmry_reset_out_n [get_bd_pins axi_ethernet/axi_rxd_arstn] [get_bd_pins axi_ethernet_dma/s2mm_prmry_reset_out_n]
+  connect_bd_net -net axi_ethernet_dma_s2mm_sts_reset_out_n [get_bd_pins axi_ethernet/axi_rxs_arstn] [get_bd_pins axi_ethernet_dma/s2mm_sts_reset_out_n]
+  connect_bd_net -net axi_ethernet_interrupt [get_bd_pins axi_ethernet/interrupt] [get_bd_pins sys_concat_intc/In1]
+  connect_bd_net -net axi_ethernet_phy_rst_n [get_bd_ports phy_rst_n] [get_bd_pins axi_ethernet/phy_rst_n]
+  connect_bd_net -net axi_gpio_gpio2_io_o [get_bd_ports gpio1_o] [get_bd_pins axi_gpio/gpio2_io_o]
+  connect_bd_net -net axi_gpio_gpio2_io_t [get_bd_ports gpio1_t] [get_bd_pins axi_gpio/gpio2_io_t]
+  connect_bd_net -net axi_gpio_gpio_io_o [get_bd_ports gpio0_o] [get_bd_pins axi_gpio/gpio_io_o]
+  connect_bd_net -net axi_gpio_gpio_io_t [get_bd_ports gpio0_t] [get_bd_pins axi_gpio/gpio_io_t]
+  connect_bd_net -net axi_gpio_ip2intc_irpt [get_bd_pins axi_gpio/ip2intc_irpt] [get_bd_pins xlconcat_mb1_intr/In1]
+  connect_bd_net -net axi_gpio_lcd_ip2intc_irpt [get_bd_pins axi_gpio_lcd/ip2intc_irpt] [get_bd_pins sys_concat_intc/In5]
+  connect_bd_net -net axi_hdmi_clkgen_clk_0 [get_bd_pins axi_hdmi_clkgen/clk_0] [get_bd_pins axi_hdmi_core/hdmi_clk]
+  connect_bd_net -net axi_hdmi_core_hdmi_16_data [get_bd_ports hdmi_16_data] [get_bd_pins axi_hdmi_core/hdmi_16_data]
+  connect_bd_net -net axi_hdmi_core_hdmi_16_data_e [get_bd_ports hdmi_16_data_e] [get_bd_pins axi_hdmi_core/hdmi_16_data_e]
+  connect_bd_net -net axi_hdmi_core_hdmi_16_hsync [get_bd_ports hdmi_16_hsync] [get_bd_pins axi_hdmi_core/hdmi_16_hsync]
+  connect_bd_net -net axi_hdmi_core_hdmi_16_vsync [get_bd_ports hdmi_16_vsync] [get_bd_pins axi_hdmi_core/hdmi_16_vsync]
+  connect_bd_net -net axi_hdmi_core_hdmi_24_data [get_bd_ports hdmi_24_data] [get_bd_pins axi_hdmi_core/hdmi_24_data]
+  connect_bd_net -net axi_hdmi_core_hdmi_24_data_e [get_bd_ports hdmi_24_data_e] [get_bd_pins axi_hdmi_core/hdmi_24_data_e]
+  connect_bd_net -net axi_hdmi_core_hdmi_24_hsync [get_bd_ports hdmi_24_hsync] [get_bd_pins axi_hdmi_core/hdmi_24_hsync]
+  connect_bd_net -net axi_hdmi_core_hdmi_24_vsync [get_bd_ports hdmi_24_vsync] [get_bd_pins axi_hdmi_core/hdmi_24_vsync]
+  connect_bd_net -net axi_hdmi_core_hdmi_36_data [get_bd_ports hdmi_36_data] [get_bd_pins axi_hdmi_core/hdmi_36_data]
+  connect_bd_net -net axi_hdmi_core_hdmi_36_data_e [get_bd_ports hdmi_36_data_e] [get_bd_pins axi_hdmi_core/hdmi_36_data_e]
+  connect_bd_net -net axi_hdmi_core_hdmi_36_hsync [get_bd_ports hdmi_36_hsync] [get_bd_pins axi_hdmi_core/hdmi_36_hsync]
+  connect_bd_net -net axi_hdmi_core_hdmi_36_vsync [get_bd_ports hdmi_36_vsync] [get_bd_pins axi_hdmi_core/hdmi_36_vsync]
+  connect_bd_net -net axi_hdmi_core_hdmi_out_clk [get_bd_ports hdmi_out_clk] [get_bd_pins axi_hdmi_core/hdmi_out_clk]
+  connect_bd_net -net axi_hdmi_core_vdma_fs [get_bd_pins axi_hdmi_core/vdma_fs] [get_bd_pins axi_hdmi_core/vdma_fs_ret] [get_bd_pins axi_hdmi_dma/mm2s_fsync]
+  connect_bd_net -net axi_hdmi_core_vdma_ready [get_bd_pins axi_hdmi_core/vdma_ready] [get_bd_pins axi_hdmi_dma/m_axis_mm2s_tready]
+  connect_bd_net -net axi_hdmi_dma_m_axis_mm2s_tdata [get_bd_pins axi_hdmi_core/vdma_data] [get_bd_pins axi_hdmi_dma/m_axis_mm2s_tdata]
+  connect_bd_net -net axi_hdmi_dma_m_axis_mm2s_tvalid [get_bd_pins axi_hdmi_core/vdma_valid] [get_bd_pins axi_hdmi_dma/m_axis_mm2s_tvalid]
+  connect_bd_net -net axi_hdmi_dma_mm2s_introut [get_bd_pins axi_hdmi_dma/mm2s_introut] [get_bd_pins sys_concat_intc/In8]
+  connect_bd_net -net axi_iic_main_iic2intc_irpt [get_bd_pins axi_iic_main/iic2intc_irpt] [get_bd_pins sys_concat_intc/In9]
+  connect_bd_net -net axi_spdif_tx_core_s_axis_tready [get_bd_pins axi_spdif_tx_core/s_axis_tready] [get_bd_pins axi_spdif_tx_dma/m_axis_mm2s_tready]
+  connect_bd_net -net axi_spdif_tx_core_spdif_tx_o [get_bd_ports spdif] [get_bd_pins axi_spdif_tx_core/spdif_tx_o]
+  connect_bd_net -net axi_spdif_tx_dma_m_axis_mm2s_tdata [get_bd_pins axi_spdif_tx_core/s_axis_tdata] [get_bd_pins axi_spdif_tx_dma/m_axis_mm2s_tdata]
+  connect_bd_net -net axi_spdif_tx_dma_m_axis_mm2s_tlast [get_bd_pins axi_spdif_tx_core/s_axis_tlast] [get_bd_pins axi_spdif_tx_dma/m_axis_mm2s_tlast]
+  connect_bd_net -net axi_spdif_tx_dma_m_axis_mm2s_tvalid [get_bd_pins axi_spdif_tx_core/s_axis_tvalid] [get_bd_pins axi_spdif_tx_dma/m_axis_mm2s_tvalid]
+  connect_bd_net -net axi_spdif_tx_dma_mm2s_introut [get_bd_pins axi_spdif_tx_dma/mm2s_introut] [get_bd_pins sys_concat_intc/In7]
+  connect_bd_net -net axi_spi_io0_o [get_bd_ports spi_sdo_o] [get_bd_pins axi_spi/io0_o]
+  connect_bd_net -net axi_spi_ip2intc_irpt [get_bd_pins axi_spi/ip2intc_irpt] [get_bd_pins sys_concat_intc/In10]
+  connect_bd_net -net axi_spi_sck_o [get_bd_ports spi_clk_o] [get_bd_pins axi_spi/sck_o]
+  connect_bd_net -net axi_spi_ss_o [get_bd_ports spi_csn_o] [get_bd_pins axi_spi/ss_o]
+  connect_bd_net -net axi_timer_interrupt [get_bd_pins axi_timer/interrupt] [get_bd_pins sys_concat_intc/In0]
+  connect_bd_net -net axi_timer_mb1_0_interrupt [get_bd_pins axi_timer_mb1_0/interrupt] [get_bd_pins xlconcat_mb1_intr/In0]
+  connect_bd_net -net axi_uart_interrupt [get_bd_pins axi_uart/interrupt] [get_bd_pins sys_concat_intc/In4]
+  connect_bd_net -net axi_uart_tx [get_bd_ports uart_sout] [get_bd_pins axi_uart/tx]
+  connect_bd_net -net gpio0_i_1 [get_bd_ports gpio0_i] [get_bd_pins axi_gpio/gpio_io_i]
+  connect_bd_net -net gpio1_i_1 [get_bd_ports gpio1_i] [get_bd_pins axi_gpio/gpio2_io_i]
+  connect_bd_net -net mailbox_0_Interrupt_0 [get_bd_pins mailbox_0/Interrupt_0] [get_bd_pins sys_concat_intc/In15]
+  connect_bd_net -net mailbox_0_Interrupt_1 [get_bd_pins mailbox_0/Interrupt_1] [get_bd_pins xlconcat_mb1_intr/In2]
+  connect_bd_net -net mb_intr_06_1 [get_bd_ports mb_intr_06] [get_bd_pins sys_concat_intc/In6]
+  connect_bd_net -net mb_intr_12_1 [get_bd_ports mb_intr_12] [get_bd_pins sys_concat_intc/In12]
+  connect_bd_net -net mb_intr_13_1 [get_bd_ports mb_intr_13] [get_bd_pins sys_concat_intc/In13]
+  connect_bd_net -net mb_intr_14_1 [get_bd_ports mb_intr_14] [get_bd_pins sys_concat_intc/In14]
+  connect_bd_net -net mb_intr_15_1 [get_bd_ports mb_intr_15] [get_bd_pins sys_concat_intc/In11]
+  connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins sys_debug/Debug_SYS_Rst] [get_bd_pins sys_rstgen/mb_debug_sys_rst]
+  connect_bd_net -net spi_clk_i_1 [get_bd_ports spi_clk_i] [get_bd_pins axi_spi/sck_i]
+  connect_bd_net -net spi_csn_i_1 [get_bd_ports spi_csn_i] [get_bd_pins axi_spi/ss_i]
+  connect_bd_net -net spi_sdi_i_1 [get_bd_ports spi_sdi_i] [get_bd_pins axi_spi/io1_i]
+  connect_bd_net -net spi_sdo_i_1 [get_bd_ports spi_sdo_i] [get_bd_pins axi_spi/io0_i]
+  connect_bd_net -net sys_200m_clk [get_bd_pins axi_ddr_cntrl/ui_addn_clk_0] [get_bd_pins axi_ethernet/ref_clk] [get_bd_pins axi_hdmi_clkgen/clk] [get_bd_pins sys_audio_clkgen/clk_in1] [get_bd_pins sys_ethernet_clkgen/clk_in1]
+  connect_bd_net -net sys_audio_clkgen_clk_out1 [get_bd_pins axi_spdif_tx_core/spdif_data_clk] [get_bd_pins sys_audio_clkgen/clk_out1]
+  connect_bd_net -net sys_clk_n_1 [get_bd_ports sys_clk_n] [get_bd_pins axi_ddr_cntrl/sys_clk_n]
+  connect_bd_net -net sys_clk_p_1 [get_bd_ports sys_clk_p] [get_bd_pins axi_ddr_cntrl/sys_clk_p]
+  connect_bd_net -net sys_concat_intc_dout [get_bd_pins axi_intc/intr] [get_bd_pins sys_concat_intc/dout]
+  connect_bd_net -net sys_cpu_reset [get_bd_pins sys_rstgen/peripheral_reset]
+  connect_bd_net -net sys_cpu_resetn [get_bd_pins axi_ddr_cntrl/aresetn] [get_bd_pins axi_ethernet/s_axi_lite_resetn] [get_bd_pins axi_ethernet_dma/axi_resetn] [get_bd_pins axi_gpio/s_axi_aresetn] [get_bd_pins axi_gpio_lcd/s_axi_aresetn] [get_bd_pins axi_hdmi_clkgen/s_axi_aresetn] [get_bd_pins axi_hdmi_core/s_axi_aresetn] [get_bd_pins axi_hdmi_dma/axi_resetn] [get_bd_pins axi_iic_main/s_axi_aresetn] [get_bd_pins axi_intc/s_axi_aresetn] [get_bd_pins axi_mb0_interconnect/ARESETN] [get_bd_pins axi_mb0_interconnect/M00_ARESETN] [get_bd_pins axi_mb0_interconnect/M01_ARESETN] [get_bd_pins axi_mb0_interconnect/M02_ARESETN] [get_bd_pins axi_mb0_interconnect/M03_ARESETN] [get_bd_pins axi_mb0_interconnect/M04_ARESETN] [get_bd_pins axi_mb0_interconnect/M05_ARESETN] [get_bd_pins axi_mb0_interconnect/M06_ARESETN] [get_bd_pins axi_mb0_interconnect/M07_ARESETN] [get_bd_pins axi_mb0_interconnect/M08_ARESETN] [get_bd_pins axi_mb0_interconnect/M09_ARESETN] [get_bd_pins axi_mb0_interconnect/M10_ARESETN] [get_bd_pins axi_mb0_interconnect/M11_ARESETN] [get_bd_pins axi_mb0_interconnect/M12_ARESETN] [get_bd_pins axi_mb0_interconnect/M13_ARESETN] [get_bd_pins axi_mb0_interconnect/M14_ARESETN] [get_bd_pins axi_mb0_interconnect/S00_ARESETN] [get_bd_pins axi_mem_interconnect/ARESETN] [get_bd_pins axi_mem_interconnect/M00_ARESETN] [get_bd_pins axi_mem_interconnect/S00_ARESETN] [get_bd_pins axi_mem_interconnect/S01_ARESETN] [get_bd_pins axi_mem_interconnect/S02_ARESETN] [get_bd_pins axi_mem_interconnect/S03_ARESETN] [get_bd_pins axi_mem_interconnect/S04_ARESETN] [get_bd_pins axi_mem_interconnect/S05_ARESETN] [get_bd_pins axi_mem_interconnect/S06_ARESETN] [get_bd_pins axi_mem_interconnect/S07_ARESETN] [get_bd_pins axi_mem_interconnect/S08_ARESETN] [get_bd_pins axi_mem_interconnect/S09_ARESETN] [get_bd_pins axi_spdif_tx_core/s_axi_aresetn] [get_bd_pins axi_spdif_tx_core/s_axis_aresetn] [get_bd_pins axi_spdif_tx_dma/axi_resetn] [get_bd_pins axi_spi/s_axi_aresetn] [get_bd_pins axi_timer/s_axi_aresetn] [get_bd_pins axi_timer_mb1_0/s_axi_aresetn] [get_bd_pins axi_uart/s_axi_aresetn] [get_bd_pins mailbox_0/S0_AXI_ARESETN] [get_bd_pins mailbox_0/S1_AXI_ARESETN] [get_bd_pins mutex_0/S0_AXI_ARESETN] [get_bd_pins mutex_0/S1_AXI_ARESETN] [get_bd_pins sys_debug/S_AXI_ARESETN] [get_bd_pins sys_mb1_axi_intc/s_axi_aresetn] [get_bd_pins sys_mb1_interconnect/M00_ARESETN] [get_bd_pins sys_mb1_interconnect/M01_ARESETN] [get_bd_pins sys_mb1_interconnect/M02_ARESETN] [get_bd_pins sys_mb1_interconnect/M03_ARESETN] [get_bd_pins sys_mb1_interconnect/M04_ARESETN] [get_bd_pins sys_mb1_interconnect/M05_ARESETN] [get_bd_pins sys_mb1_interconnect/S00_ARESETN] [get_bd_pins sys_rstgen/peripheral_aresetn]
+  connect_bd_net -net sys_debug_Interrupt [get_bd_pins sys_debug/Interrupt] [get_bd_pins xlconcat_mb1_intr/In3]
+  connect_bd_net -net sys_ethernet_clkgen_clk_out1 [get_bd_pins axi_ethernet/gtx_clk] [get_bd_pins sys_ethernet_clkgen/clk_out1]
+  connect_bd_net -net sys_mb1_Clk [get_bd_pins axi_ddr_cntrl/ui_clk] [get_bd_pins axi_ethernet/axis_clk] [get_bd_pins axi_ethernet/s_axi_lite_clk] [get_bd_pins axi_ethernet_dma/m_axi_mm2s_aclk] [get_bd_pins axi_ethernet_dma/m_axi_s2mm_aclk] [get_bd_pins axi_ethernet_dma/m_axi_sg_aclk] [get_bd_pins axi_ethernet_dma/s_axi_lite_aclk] [get_bd_pins axi_gpio/s_axi_aclk] [get_bd_pins axi_gpio_lcd/s_axi_aclk] [get_bd_pins axi_hdmi_clkgen/s_axi_aclk] [get_bd_pins axi_hdmi_core/s_axi_aclk] [get_bd_pins axi_hdmi_core/vdma_clk] [get_bd_pins axi_hdmi_dma/m_axi_mm2s_aclk] [get_bd_pins axi_hdmi_dma/m_axis_mm2s_aclk] [get_bd_pins axi_hdmi_dma/s_axi_lite_aclk] [get_bd_pins axi_iic_main/s_axi_aclk] [get_bd_pins axi_intc/s_axi_aclk] [get_bd_pins axi_mb0_interconnect/ACLK] [get_bd_pins axi_mb0_interconnect/M00_ACLK] [get_bd_pins axi_mb0_interconnect/M01_ACLK] [get_bd_pins axi_mb0_interconnect/M02_ACLK] [get_bd_pins axi_mb0_interconnect/M03_ACLK] [get_bd_pins axi_mb0_interconnect/M04_ACLK] [get_bd_pins axi_mb0_interconnect/M05_ACLK] [get_bd_pins axi_mb0_interconnect/M06_ACLK] [get_bd_pins axi_mb0_interconnect/M07_ACLK] [get_bd_pins axi_mb0_interconnect/M08_ACLK] [get_bd_pins axi_mb0_interconnect/M09_ACLK] [get_bd_pins axi_mb0_interconnect/M10_ACLK] [get_bd_pins axi_mb0_interconnect/M11_ACLK] [get_bd_pins axi_mb0_interconnect/M12_ACLK] [get_bd_pins axi_mb0_interconnect/M13_ACLK] [get_bd_pins axi_mb0_interconnect/M14_ACLK] [get_bd_pins axi_mb0_interconnect/S00_ACLK] [get_bd_pins axi_mem_interconnect/ACLK] [get_bd_pins axi_mem_interconnect/M00_ACLK] [get_bd_pins axi_mem_interconnect/S00_ACLK] [get_bd_pins axi_mem_interconnect/S01_ACLK] [get_bd_pins axi_mem_interconnect/S02_ACLK] [get_bd_pins axi_mem_interconnect/S03_ACLK] [get_bd_pins axi_mem_interconnect/S04_ACLK] [get_bd_pins axi_mem_interconnect/S05_ACLK] [get_bd_pins axi_mem_interconnect/S06_ACLK] [get_bd_pins axi_mem_interconnect/S07_ACLK] [get_bd_pins axi_mem_interconnect/S08_ACLK] [get_bd_pins axi_mem_interconnect/S09_ACLK] [get_bd_pins axi_spdif_tx_core/s_axi_aclk] [get_bd_pins axi_spdif_tx_core/s_axis_aclk] [get_bd_pins axi_spdif_tx_dma/m_axi_mm2s_aclk] [get_bd_pins axi_spdif_tx_dma/m_axi_sg_aclk] [get_bd_pins axi_spdif_tx_dma/s_axi_lite_aclk] [get_bd_pins axi_spi/ext_spi_clk] [get_bd_pins axi_spi/s_axi_aclk] [get_bd_pins axi_timer/s_axi_aclk] [get_bd_pins axi_timer_mb1_0/s_axi_aclk] [get_bd_pins axi_uart/s_axi_aclk] [get_bd_pins mailbox_0/S0_AXI_ACLK] [get_bd_pins mailbox_0/S1_AXI_ACLK] [get_bd_pins mb0/Clk] [get_bd_pins mb1/Clk] [get_bd_pins mutex_0/S0_AXI_ACLK] [get_bd_pins mutex_0/S1_AXI_ACLK] [get_bd_pins sys_debug/S_AXI_ACLK] [get_bd_pins sys_dlmb/LMB_Clk] [get_bd_pins sys_dlmb_cntlr/LMB_Clk] [get_bd_pins sys_ilmb/LMB_Clk] [get_bd_pins sys_ilmb_cntlr/LMB_Clk] [get_bd_pins sys_mb1_axi_intc/processor_clk] [get_bd_pins sys_mb1_axi_intc/s_axi_aclk] [get_bd_pins sys_mb1_interconnect/ACLK] [get_bd_pins sys_mb1_interconnect/M00_ACLK] [get_bd_pins sys_mb1_interconnect/M01_ACLK] [get_bd_pins sys_mb1_interconnect/M02_ACLK] [get_bd_pins sys_mb1_interconnect/M03_ACLK] [get_bd_pins sys_mb1_interconnect/M04_ACLK] [get_bd_pins sys_mb1_interconnect/M05_ACLK] [get_bd_pins sys_mb1_interconnect/S00_ACLK] [get_bd_pins sys_mb1_local_memory/LMB_Clk] [get_bd_pins sys_rstgen/slowest_sync_clk]
+  connect_bd_net -net sys_rst_1 [get_bd_ports sys_rst] [get_bd_pins axi_ddr_cntrl/sys_rst] [get_bd_pins sys_rstgen/ext_reset_in]
+  connect_bd_net -net sys_rstgen_bus_struct_reset [get_bd_pins sys_dlmb/SYS_Rst] [get_bd_pins sys_dlmb_cntlr/LMB_Rst] [get_bd_pins sys_ilmb/SYS_Rst] [get_bd_pins sys_ilmb_cntlr/LMB_Rst] [get_bd_pins sys_mb1_local_memory/SYS_Rst] [get_bd_pins sys_rstgen/bus_struct_reset]
+  connect_bd_net -net sys_rstgen_interconnect_aresetn [get_bd_pins sys_mb1_interconnect/ARESETN] [get_bd_pins sys_rstgen/interconnect_aresetn]
+  connect_bd_net -net sys_rstgen_mb_reset [get_bd_pins mb0/Reset] [get_bd_pins mb1/Reset] [get_bd_pins sys_mb1_axi_intc/processor_rst] [get_bd_pins sys_rstgen/mb_reset]
+  connect_bd_net -net uart_sin_1 [get_bd_ports uart_sin] [get_bd_pins axi_uart/rx]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins sys_mb1_axi_intc/intr] [get_bd_pins xlconcat_mb1_intr/dout]
+
+  # Create address segments
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces axi_ethernet_dma/Data_SG] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces axi_ethernet_dma/Data_MM2S] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces axi_ethernet_dma/Data_S2MM] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces axi_hdmi_dma/Data_MM2S] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces axi_spdif_tx_dma/Data_SG] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces axi_spdif_tx_dma/Data_MM2S] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces mb0/Instruction] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x00010000 -offset 0x41E00000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_spdif_tx_dma/S_AXI_LITE/Reg] SEG_axi_spdif_tx_dma_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x40600000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_uart/S_AXI/Reg] SEG_axi_uart_Reg
+  create_bd_addr_seg -range 0x00040000 -offset 0x40E00000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_ethernet/s_axi/Reg0] SEG_data_axi_ethernet
+  create_bd_addr_seg -range 0x00001000 -offset 0x41E10000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_ethernet_dma/S_AXI_LITE/Reg] SEG_data_axi_ethernet_dma
+  create_bd_addr_seg -range 0x00001000 -offset 0x40010000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_gpio_lcd/S_AXI/Reg] SEG_data_axi_gpio_lcd
+  create_bd_addr_seg -range 0x00010000 -offset 0x79000000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_hdmi_clkgen/s_axi/axi_lite] SEG_data_axi_hdmi_clkgen
+  create_bd_addr_seg -range 0x00010000 -offset 0x70E00000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_hdmi_core/s_axi/axi_lite] SEG_data_axi_hdmi_core
+  create_bd_addr_seg -range 0x00001000 -offset 0x43000000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_hdmi_dma/S_AXI_LITE/Reg] SEG_data_axi_hdmi_dma
+  create_bd_addr_seg -range 0x00001000 -offset 0x41600000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_iic_main/S_AXI/Reg] SEG_data_axi_iic_main
+  create_bd_addr_seg -range 0x00001000 -offset 0x41200000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_intc/S_AXI/Reg] SEG_data_axi_intc
+  create_bd_addr_seg -range 0x00010000 -offset 0x75C00000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_spdif_tx_core/s_axi/axi_lite] SEG_data_axi_spdif_tx_core
+  create_bd_addr_seg -range 0x00010000 -offset 0x44A70000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_spi/AXI_LITE/Reg] SEG_data_axi_spi
+  create_bd_addr_seg -range 0x00001000 -offset 0x41C00000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs axi_timer/S_AXI/Reg] SEG_data_axi_timer
+  create_bd_addr_seg -range 0x00002000 -offset 0x00000000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs sys_dlmb_cntlr/SLMB/Mem] SEG_dlmb_cntlr
+  create_bd_addr_seg -range 0x00002000 -offset 0x00000000 [get_bd_addr_spaces mb0/Instruction] [get_bd_addr_segs sys_ilmb_cntlr/SLMB/Mem] SEG_ilmb_cntlr
+  create_bd_addr_seg -range 0x00010000 -offset 0x43600000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs mailbox_0/S0_AXI/Reg] SEG_mailbox_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x43400000 [get_bd_addr_spaces mb0/Data] [get_bd_addr_segs mutex_0/S0_AXI/Reg] SEG_mutex_0_Reg
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces mb1/Data] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x40000000 -offset 0x80000000 [get_bd_addr_spaces mb1/Instruction] [get_bd_addr_segs axi_ddr_cntrl/memmap/memaddr] SEG_axi_ddr_cntrl_memaddr
+  create_bd_addr_seg -range 0x00010000 -offset 0x40000000 [get_bd_addr_spaces mb1/Data] [get_bd_addr_segs axi_gpio/S_AXI/Reg] SEG_axi_gpio_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x41C00000 [get_bd_addr_spaces mb1/Data] [get_bd_addr_segs axi_timer_mb1_0/S_AXI/Reg] SEG_axi_timer_mb1_0_Reg
+  create_bd_addr_seg -range 0x00002000 -offset 0x00000000 [get_bd_addr_spaces mb1/Data] [get_bd_addr_segs sys_mb1_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] SEG_dlmb_bram_if_cntlr_Mem
+  create_bd_addr_seg -range 0x00002000 -offset 0x00000000 [get_bd_addr_spaces mb1/Instruction] [get_bd_addr_segs sys_mb1_local_memory/ilmb_bram_if_cntlr/SLMB/Mem] SEG_ilmb_bram_if_cntlr_Mem
+  create_bd_addr_seg -range 0x00010000 -offset 0x43610000 [get_bd_addr_spaces mb1/Data] [get_bd_addr_segs mailbox_0/S1_AXI/Reg] SEG_mailbox_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x43410000 [get_bd_addr_spaces mb1/Data] [get_bd_addr_segs mutex_0/S1_AXI/S1_AXI_Reg] SEG_mutex_0_S1_AXI_Reg
+  create_bd_addr_seg -range 0x00001000 -offset 0x41400000 [get_bd_addr_spaces mb1/Data] [get_bd_addr_segs sys_debug/S_AXI/Reg] SEG_sys_debug_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x41200000 [get_bd_addr_spaces mb1/Data] [get_bd_addr_segs sys_mb1_axi_intc/S_AXI/Reg] SEG_sys_mb1_axi_intc_Reg
+
+  # Perform GUI Layout
+  regenerate_bd_layout -layout_string {
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port hdmi_16_vsync -pg 1 -y 2240 -defaultsOSRD
+preplace port uart_sin -pg 1 -y 1780 -defaultsOSRD
+preplace port sys_clk_n -pg 1 -y 2360 -defaultsOSRD
+preplace port hdmi_16_hsync -pg 1 -y 2220 -defaultsOSRD
+preplace port mdio -pg 1 -y 980 -defaultsOSRD
+preplace port spdif -pg 1 -y 1340 -defaultsOSRD
+preplace port spi_sdo_o -pg 1 -y 2910 -defaultsOSRD
+preplace port sys_clk_p -pg 1 -y 2340 -defaultsOSRD
+preplace port mb_intr_06 -pg 1 -y 1540 -defaultsOSRD
+preplace port sys_rst -pg 1 -y 2380 -defaultsOSRD
+preplace port rgmii -pg 1 -y 1000 -defaultsOSRD
+preplace port hdmi_36_data_e -pg 1 -y 2440 -defaultsOSRD
+preplace port spi_sdi_i -pg 1 -y 3060 -defaultsOSRD
+preplace port spi_clk_i -pg 1 -y 2550 -defaultsOSRD
+preplace port hdmi_36_vsync -pg 1 -y 2420 -defaultsOSRD
+preplace port hdmi_36_hsync -pg 1 -y 2400 -defaultsOSRD
+preplace port hdmi_24_vsync -pg 1 -y 2340 -defaultsOSRD
+preplace port uart_sout -pg 1 -y 1730 -defaultsOSRD
+preplace port gpio_lcd -pg 1 -y 1790 -defaultsOSRD
+preplace port iic_main -pg 1 -y 2600 -defaultsOSRD
+preplace port phy_rst_n -pg 1 -y 1060 -defaultsOSRD
+preplace port hdmi_24_hsync -pg 1 -y 2320 -defaultsOSRD
+preplace port spi_sdo_i -pg 1 -y 2570 -defaultsOSRD
+preplace port mb_intr_12 -pg 1 -y 1660 -defaultsOSRD
+preplace port hdmi_16_data_e -pg 1 -y 2260 -defaultsOSRD
+preplace port hdmi_out_clk -pg 1 -y 2200 -defaultsOSRD
+preplace port spi_clk_o -pg 1 -y 2940 -defaultsOSRD
+preplace port mb_intr_13 -pg 1 -y 1680 -defaultsOSRD
+preplace port mb_intr_14 -pg 1 -y 1700 -defaultsOSRD
+preplace port mb_intr_15 -pg 1 -y 1640 -defaultsOSRD
+preplace port hdmi_24_data_e -pg 1 -y 2360 -defaultsOSRD
+preplace port ddr3 -pg 1 -y 2750 -defaultsOSRD
+preplace portBus hdmi_16_data -pg 1 -y 2280 -defaultsOSRD
+preplace portBus gpio1_t -pg 1 -y 2070 -defaultsOSRD
+preplace portBus gpio0_t -pg 1 -y 1990 -defaultsOSRD
+preplace portBus gpio1_i -pg 1 -y 1960 -defaultsOSRD
+preplace portBus gpio0_i -pg 1 -y 1940 -defaultsOSRD
+preplace portBus spi_csn_o -pg 1 -y 2980 -defaultsOSRD
+preplace portBus hdmi_24_data -pg 1 -y 2380 -defaultsOSRD
+preplace portBus hdmi_36_data -pg 1 -y 2460 -defaultsOSRD
+preplace portBus gpio1_o -pg 1 -y 2050 -defaultsOSRD
+preplace portBus gpio0_o -pg 1 -y 1970 -defaultsOSRD
+preplace portBus spi_csn_i -pg 1 -y 3090 -defaultsOSRD
+preplace inst axi_hdmi_clkgen -pg 1 -lvl 5 -y 1320 -defaultsOSRD
+preplace inst axi_ddr_cntrl -pg 1 -lvl 8 -y 2800 -defaultsOSRD
+preplace inst sys_debug -pg 1 -lvl 5 -y 2660 -defaultsOSRD
+preplace inst sys_ilmb_cntlr -pg 1 -lvl 8 -y 1660 -defaultsOSRD
+preplace inst axi_hdmi_core -pg 1 -lvl 8 -y 2350 -defaultsOSRD
+preplace inst mailbox_0 -pg 1 -lvl 5 -y 2100 -defaultsOSRD
+preplace inst axi_spdif_tx_dma -pg 1 -lvl 6 -y 1290 -defaultsOSRD
+preplace inst axi_spi -pg 1 -lvl 5 -y 2920 -defaultsOSRD
+preplace inst axi_iic_main -pg 1 -lvl 8 -y 2620 -defaultsOSRD
+preplace inst sys_ethernet_clkgen -pg 1 -lvl 7 -y 1230 -defaultsOSRD
+preplace inst sys_concat_intc -pg 1 -lvl 4 -y 1570 -defaultsOSRD
+preplace inst axi_gpio_lcd -pg 1 -lvl 8 -y 1800 -defaultsOSRD
+preplace inst sys_mb1_axi_intc -pg 1 -lvl 2 -y 2120 -defaultsOSRD
+preplace inst sys_audio_clkgen -pg 1 -lvl 7 -y 1380 -defaultsOSRD
+preplace inst axi_hdmi_dma -pg 1 -lvl 6 -y 1810 -defaultsOSRD
+preplace inst axi_timer -pg 1 -lvl 5 -y 1000 -defaultsOSRD
+preplace inst axi_ethernet_dma -pg 1 -lvl 6 -y 1000 -defaultsOSRD
+preplace inst sys_dlmb_cntlr -pg 1 -lvl 8 -y 1540 -defaultsOSRD
+preplace inst sys_mb1_interconnect -pg 1 -lvl 4 -y 2270 -defaultsOSRD
+preplace inst sys_mb1_local_memory -pg 1 -lvl 4 -y 2650 -defaultsOSRD
+preplace inst axi_mb0_interconnect -pg 1 -lvl 4 -y 920 -defaultsOSRD
+preplace inst axi_ddr_cntrl_device_temp_i_GND -pg 1 -lvl 7 -y 2810 -defaultsOSRD
+preplace inst axi_gpio -pg 1 -lvl 8 -y 2010 -defaultsOSRD
+preplace inst sys_rstgen -pg 1 -lvl 1 -y 2460 -defaultsOSRD
+preplace inst sys_dlmb -pg 1 -lvl 7 -y 1520 -defaultsOSRD
+preplace inst mutex_0 -pg 1 -lvl 5 -y 2500 -defaultsOSRD
+preplace inst axi_ethernet -pg 1 -lvl 8 -y 1020 -defaultsOSRD
+preplace inst sys_lmb_bram -pg 1 -lvl 9 -y 1650 -defaultsOSRD
+preplace inst sys_ilmb -pg 1 -lvl 7 -y 1640 -defaultsOSRD
+preplace inst axi_timer_mb1_0 -pg 1 -lvl 5 -y 2300 -defaultsOSRD
+preplace inst axi_intc -pg 1 -lvl 5 -y 1460 -defaultsOSRD
+preplace inst axi_uart -pg 1 -lvl 5 -y 1630 -defaultsOSRD
+preplace inst xlconcat_mb1_intr -pg 1 -lvl 1 -y 2070 -defaultsOSRD
+preplace inst axi_spdif_tx_core -pg 1 -lvl 8 -y 1340 -defaultsOSRD
+preplace inst mb0 -pg 1 -lvl 6 -y 1610 -defaultsOSRD
+preplace inst mb1 -pg 1 -lvl 3 -y 2090 -defaultsOSRD
+preplace inst axi_mem_interconnect -pg 1 -lvl 7 -y 380 -defaultsOSRD
+preplace netloc S00_AXI_2 1 6 1 2730
+preplace netloc axi_hdmi_core_hdmi_out_clk 1 8 2 NJ 2200 NJ
+preplace netloc axi_gpio_gpio_io_o 1 8 2 NJ 1970 NJ
+preplace netloc axi_ethernet_rgmii 1 8 2 NJ 1000 NJ
+preplace netloc sys_mb1_axi_dp 1 3 1 1180
+preplace netloc uart_sin_1 1 0 6 -40J 1790 NJ 1790 NJ 1790 NJ 1790 NJ 1790 2060
+preplace netloc mb_intr_14_1 1 0 4 NJ 1700 NJ 1700 NJ 1700 NJ
+preplace netloc sys_ethernet_clkgen_clk_out1 1 7 1 3140J
+preplace netloc mb_intr_06_1 1 0 4 NJ 1540 NJ 1540 NJ 1540 NJ
+preplace netloc axi_ethernet_dma_mm2s_cntrl_reset_out_n 1 6 2 N 1020 3300J
+preplace netloc sys_mb1_interconnect_M05_AXI 1 4 1 1580
+preplace netloc axi_ethernet_m_axis_rxd 1 5 4 2190 800 NJ 800 NJ 800 3710
+preplace netloc sys_audio_clkgen_clk_out1 1 7 1 3270J
+preplace netloc axi_hdmi_core_hdmi_16_data 1 8 2 NJ 2280 NJ
+preplace netloc spi_sdo_i_1 1 0 6 -30J 2790 NJ 2790 NJ 2790 NJ 2790 NJ 2790 2040
+preplace netloc axi_hdmi_core_vdma_fs 1 5 4 2200 2150 NJ 2150 3270 2150 3680
+preplace netloc axi_uart_interrupt 1 3 3 1240 1780 NJ 1780 2040
+preplace netloc mb_intr_12_1 1 0 4 NJ 1660 NJ 1660 NJ 1660 NJ
+preplace netloc sys_mb_DLMB 1 6 1 2810
+preplace netloc axi_hdmi_clkgen_clk_0 1 5 3 2090 2300 NJ 2300 NJ
+preplace netloc axi_gpio_gpio_io_t 1 8 2 NJ 1990 NJ
+preplace netloc sys_mb1_interrupt 1 2 1 660
+preplace netloc axi_ethernet_dma_M_AXIS_CNTRL 1 6 2 NJ 980 3180
+preplace netloc xlconcat_0_dout 1 1 1 390
+preplace netloc axi_gpio_lcd_ip2intc_irpt 1 3 6 1280 1770 NJ 1770 2130J 1700 2710J 1730 NJ 1730 3680
+preplace netloc axi_spdif_tx_core_s_axis_tready 1 6 2 N 1310 3270J
+preplace netloc axi_hdmi_core_hdmi_36_data 1 8 2 NJ 2460 NJ
+preplace netloc axi_cpu_interconnect_M11_AXI 1 4 4 1600J 850 NJ 850 NJ 850 3110
+preplace netloc axi_ethernet_dma_s2mm_sts_reset_out_n 1 6 2 N 1060 3260J
+preplace netloc axi_cpu_interconnect_M13_AXI 1 4 4 1700J 1110 2150J 1420 2810J 1320 3210
+preplace netloc axi_cpu_interconnect_M04_AXI 1 4 1 1570
+preplace netloc mb_intr_15_1 1 0 4 NJ 1640 NJ 1640 NJ 1640 NJ
+preplace netloc S01_AXI_1 1 6 1 2750
+preplace netloc axi_spdif_tx_dma_m_axis_mm2s_tdata 1 6 2 2780J 1290 3220
+preplace netloc S07_AXI_1 1 6 1 2760
+preplace netloc axi_cpu_interconnect_M01_AXI 1 4 4 1600J 790 NJ 790 NJ 790 3290
+preplace netloc axi_spi_io0_o 1 5 5 2180J 2910 NJ 2910 NJ 2910 NJ 2910 NJ
+preplace netloc spi_csn_i_1 1 0 6 NJ 3090 NJ 3090 NJ 3090 NJ 3090 NJ 3090 2040
+preplace netloc sys_mb1_intc_axi 1 1 4 410 2000 NJ 2000 NJ 2000 1570
+preplace netloc mb_intr_13_1 1 0 4 NJ 1680 NJ 1680 NJ 1680 NJ
+preplace netloc axi_ethernet_dma_s2mm_prmry_reset_out_n 1 6 2 N 1040 3270J
+preplace netloc sys_mb1_dlmb_1 1 3 1 1190
+preplace netloc mailbox_0_Interrupt_0 1 3 3 1290 1800 NJ 1800 2060
+preplace netloc axi_hdmi_core_hdmi_24_vsync 1 8 2 NJ 2340 NJ
+preplace netloc axi_hdmi_core_hdmi_16_data_e 1 8 2 NJ 2260 NJ
+preplace netloc sys_mb1_M_AXI_DC 1 3 4 1150 210 NJ 210 NJ 210 NJ
+preplace netloc axi_intc_interrupt 1 5 1 2060
+preplace netloc mailbox_0_Interrupt_1 1 0 6 30 1960 NJ 1960 NJ 1960 NJ 1960 NJ 1960 2040
+preplace netloc mdm_1_debug_sys_rst 1 0 6 30 2740 NJ 2740 NJ 2740 NJ 2740 NJ 2740 2040
+preplace netloc spi_sdi_i_1 1 0 6 NJ 3060 NJ 3060 NJ 3060 NJ 3060 NJ 3060 2050
+preplace netloc axi_ethernet_interrupt 1 3 6 1250 520 1690J 770 NJ 770 NJ 770 NJ 770 3720
+preplace netloc axi_iic_main_IIC 1 8 2 NJ 2600 NJ
+preplace netloc S02_AXI_1 1 6 1 2700
+preplace netloc sys_dlmb_cntlr_BRAM_PORT 1 8 1 3720
+preplace netloc axi_spi_sck_o 1 5 5 NJ 2940 NJ 2940 NJ 2940 NJ 2940 NJ
+preplace netloc spi_clk_i_1 1 0 6 -10J 2780 NJ 2780 NJ 2780 NJ 2780 NJ 2780 2060
+preplace netloc axi_ethernet_m_axis_rxs 1 5 4 2200 810 NJ 810 NJ 810 3680
+preplace netloc sys_ilmb_cntlr_BRAM_PORT 1 8 1 N
+preplace netloc axi_ddr_cntrl_device_temp_i_GND_dout 1 7 1 3110J
+preplace netloc axi_ethernet_dma_M_AXIS_MM2S 1 6 2 NJ 960 3140
+preplace netloc axi_ddr_cntrl_DDR3 1 8 2 NJ 2750 NJ
+preplace netloc axi_cpu_interconnect_M14_AXI 1 4 1 1590
+preplace netloc axi_cpu_interconnect_M08_AXI 1 4 2 1610J 900 2170
+preplace netloc axi_cpu_interconnect_M03_AXI 1 4 2 NJ 840 2180
+preplace netloc Conn 1 7 1 N
+preplace netloc axi_spdif_tx_dma_m_axis_mm2s_tlast 1 6 2 2760 1300 NJ
+preplace netloc axi_ddr_cntrl_mmcm_locked 1 0 9 20 3050 NJ 3050 NJ 3050 NJ 3050 NJ 3050 NJ 3050 NJ 3050 NJ 3050 3680
+preplace netloc axi_hdmi_core_hdmi_24_data 1 8 2 NJ 2380 NJ
+preplace netloc axi_hdmi_core_vdma_ready 1 6 3 NJ 1810 3140J 2920 3700
+preplace netloc axi_hdmi_core_hdmi_36_hsync 1 8 2 NJ 2400 NJ
+preplace netloc axi_spi_ip2intc_irpt 1 3 3 1270 2760 NJ 2760 2070
+preplace netloc axi_spi_ss_o 1 5 5 NJ 2980 NJ 2980 NJ 2980 NJ 2980 NJ
+preplace netloc sys_mb1_axi_periph_M03_AXI 1 4 1 1710
+preplace netloc sys_rstgen_mb_reset 1 1 5 400 2420 680 2420 1210J 1360 1630J 1550 2100J
+preplace netloc sys_mb1_ilmb_1 1 3 1 1160
+preplace netloc axi_cpu_interconnect_M12_AXI 1 4 2 1640J 1750 N
+preplace netloc axi_cpu_interconnect_M05_AXI 1 4 1 1710
+preplace netloc axi_spdif_tx_dma_mm2s_introut 1 3 4 1270 1370 1620J 1540 2100J 1450 2680
+preplace netloc axi_hdmi_core_hdmi_16_vsync 1 8 2 NJ 2240 NJ
+preplace netloc axi_hdmi_core_hdmi_36_data_e 1 8 2 NJ 2440 NJ
+preplace netloc gpio1_i_1 1 0 9 -20J 1940 NJ 1940 NJ 1940 NJ 1940 NJ 1940 NJ 1940 NJ 1940 3270J 1870 3690
+preplace netloc axi_mem_interconnect_M00_AXI 1 7 1 3250
+preplace netloc axi_hdmi_dma_m_axis_mm2s_tdata 1 6 2 NJ 1790 3180
+preplace netloc axi_ethernet_phy_rst_n 1 8 2 NJ 1060 NJ
+preplace netloc axi_gpio_ip2intc_irpt 1 0 9 20 1950 NJ 1950 NJ 1950 NJ 1950 NJ 1950 NJ 1950 NJ 1950 3190J 2140 3680
+preplace netloc sys_200m_clk 1 4 5 1720 1240 2120J 1430 2820 1430 3230 1190 3710
+preplace netloc axi_gpio_gpio2_io_o 1 8 2 NJ 2050 NJ
+preplace netloc axi_timer_mb1_0_interrupt 1 0 6 10 1900 NJ 1900 NJ 1900 NJ 1900 NJ 1900 2050
+preplace netloc sys_mb1_M_AXI_IC 1 3 4 1170 230 NJ 230 NJ 230 NJ
+preplace netloc sys_concat_intc_dout 1 4 1 1720
+preplace netloc axi_gpio_lcd_GPIO 1 8 2 NJ 1790 NJ
+preplace netloc axi_cpu_interconnect_M10_AXI 1 4 1 1710
+preplace netloc axi_iic_main_iic2intc_irpt 1 3 6 1260 2750 NJ 2750 NJ 2750 NJ 2750 3310J 2690 3680
+preplace netloc sys_mb1_axi_periph_M01_AXI 1 4 4 1700 1980 NJ 1980 NJ 1980 3170J
+preplace netloc axi_ethernet_mdio 1 8 2 NJ 980 NJ
+preplace netloc S06_AXI_1 1 6 1 2740
+preplace netloc sys_mb_ILMB 1 6 1 2740
+preplace netloc axi_gpio_gpio2_io_t 1 8 2 NJ 2070 NJ
+preplace netloc sys_mb1_Clk 1 0 9 0 250 400 250 670 250 1200 250 1680 250 2160 250 2770 1010 3290 2550 3690
+preplace netloc axi_hdmi_core_hdmi_24_data_e 1 8 2 NJ 2360 NJ
+preplace netloc sys_debug_MBDEBUG_0 1 2 4 680 1880 NJ 1880 NJ 1880 2070
+preplace netloc axi_cpu_interconnect_M02_AXI 1 4 4 NJ 820 NJ 820 NJ 820 3280
+preplace netloc Conn1 1 7 1 N
+preplace netloc axi_hdmi_dma_m_axis_mm2s_tvalid 1 6 2 NJ 1830 3160
+preplace netloc axi_spdif_tx_dma_m_axis_mm2s_tvalid 1 6 2 N 1330 3240J
+preplace netloc sys_debug_MBDEBUG_1 1 5 1 2120
+preplace netloc axi_cpu_interconnect_M06_AXI 1 4 1 1580
+preplace netloc axi_hdmi_core_hdmi_16_hsync 1 8 2 NJ 2220 NJ
+preplace netloc axi_hdmi_core_hdmi_36_vsync 1 8 2 NJ 2420 NJ
+preplace netloc sys_mb1_axi_periph_M02_AXI 1 4 1 1720
+preplace netloc gpio0_i_1 1 0 9 -40J 1930 NJ 1930 NJ 1930 NJ 1930 NJ 1930 NJ 1930 NJ 1930 3280J 1880 3680
+preplace netloc sys_cpu_reset 1 1 1 N
+preplace netloc axi_ethernet_dma_s2mm_introut 1 3 4 1260 1330 1660J 1150 NJ 1150 2680
+preplace netloc axi_timer_interrupt 1 3 3 1280 1320 1670J 1230 2090
+preplace netloc sys_clk_p_1 1 0 8 -20J 1970 NJ 1970 NJ 1970 NJ 1970 NJ 1970 NJ 1970 NJ 1970 3150J
+preplace netloc axi_ethernet_dma_mm2s_introut 1 3 4 1230 510 NJ 510 NJ 510 2680
+preplace netloc S04_AXI_1 1 6 1 2720
+preplace netloc axi_cpu_interconnect_M09_AXI 1 4 1 1610
+preplace netloc axi_cpu_interconnect_M07_AXI 1 4 4 1590J 860 2110J 2600 NJ 2600 N
+preplace netloc axi_spdif_tx_core_spdif_tx_o 1 8 2 NJ 1340 NJ
+preplace netloc sys_rstgen_interconnect_aresetn 1 1 3 NJ 2480 NJ 2480 1250
+preplace netloc sys_rstgen_bus_struct_reset 1 1 7 NJ 2440 NJ 2440 1230 2010 1720J 2000 NJ 2000 2820 1450 3230
+preplace netloc axi_hdmi_core_hdmi_24_hsync 1 8 2 NJ 2320 NJ
+preplace netloc axi_mb0_interconnect_M00_AXI 1 4 1 1690
+preplace netloc sys_debug_Interrupt 1 0 6 10 2770 NJ 2770 NJ 2770 NJ 2770 NJ 2770 2050
+preplace netloc axi_uart_tx 1 5 5 2070J 1460 2790J 860 3140J 850 NJ 850 4050J
+preplace netloc sys_cpu_resetn 1 1 7 380 270 NJ 270 1220 270 1650 270 2140 270 2820 830 3200
+preplace netloc S03_AXI_1 1 6 1 2710
+preplace netloc sys_clk_n_1 1 0 8 -30J 1910 NJ 1910 NJ 1910 NJ 1910 NJ 1910 2080J 2030 NJ 2030 3130J
+preplace netloc axi_ethernet_dma_mm2s_prmry_reset_out_n 1 6 2 N 1000 3310J
+preplace netloc sys_rst_1 1 0 8 -10 1990 NJ 1990 NJ 1990 NJ 1990 NJ 1990 NJ 1990 NJ 1990 3120
+preplace netloc sys_mb1_axi_periph_M04_AXI 1 4 1 1590
+preplace netloc S05_AXI_1 1 6 1 2800
+preplace netloc S00_AXI_1 1 3 4 1240 490 NJ 490 NJ 490 2690
+preplace netloc axi_hdmi_dma_mm2s_introut 1 3 4 1250 1920 NJ 1920 NJ 1920 2680
+levelinfo -pg 1 -60 220 550 930 1440 1910 2460 2980 3530 3950 4070 -top -10 -bot 3310
+",
+}
+
+  # Restore current instance
+  current_bd_instance $oldCurInst
+
+  save_bd_design
+}
+# End of create_root_design()
+
+
+##################################################################
+# MAIN FLOW
+##################################################################
+
+create_root_design ""
+
+

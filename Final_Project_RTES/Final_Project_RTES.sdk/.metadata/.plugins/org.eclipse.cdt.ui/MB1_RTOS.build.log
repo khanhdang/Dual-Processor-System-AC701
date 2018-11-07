@@ -1,0 +1,7 @@
+14:26:45 **** Clean-only build of configuration Debug for project MB1_RTOS ****
+make clean 
+rm -rf  ./src/elt3017_draw.o ./src/main_dino.o ./src/main_intr.o  ./src/elt3017_draw.d ./src/main_dino.d ./src/main_intr.d  MB1_RTOS.elf.size  MB1_RTOS.elf
+' '
+
+14:26:46 Build Finished (took 211ms)
+

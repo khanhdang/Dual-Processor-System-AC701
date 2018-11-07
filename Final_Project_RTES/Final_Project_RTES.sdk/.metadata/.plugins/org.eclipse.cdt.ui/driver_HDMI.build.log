@@ -1,0 +1,7 @@
+14:26:46 **** Clean-only build of configuration Debug for project driver_HDMI ****
+make clean 
+rm -rf  ./src/main_mb0.o  ./inc/cf_hdmi.o ./inc/transmitter.o  ./src/main_mb0.d  ./inc/cf_hdmi.d ./inc/transmitter.d  driver_HDMI.elf.size  driver_HDMI.elf
+' '
+
+14:26:46 Build Finished (took 234ms)
+
